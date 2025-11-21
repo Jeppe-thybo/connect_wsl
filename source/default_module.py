@@ -15,6 +15,7 @@ class Parameters():
 
         default = {
                    ### Training parameters
+                   'class_version'        :  ( 'classy'                ,  str          ),
                    'train_ratio'          :  ( 0.9                     ,  float        ),
                    'val_ratio'            :  ( 0.01                    ,  float        ),
                    'epochs'               :  ( 200                     ,  int          ),

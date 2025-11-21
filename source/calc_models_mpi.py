@@ -12,16 +12,28 @@ sampling     = sys.argv[3]
 sys.path.insert(0,CONNECT_PATH)
 
 import numpy as np
-import classy
 from scipy.interpolate import CubicSpline
 from mpi4py import MPI
-
+import importlib
 from source.default_module import Parameters
 from source.tools import get_computed_cls, get_z_idx, get_covmat
 
 param_file = os.path.join(CONNECT_PATH, param_file)
 param        = Parameters(param_file)
 param_names  = list(param.parameters.keys())
+
+import importlib
+import importlib.util
+
+class_version = getattr(param, 'class_version')
+classy = importlib.import_module(class_version)
+
+spec = importlib.util.find_spec(class_version)
+if spec and spec.origin:
+    print(f"Using CLASS version: {class_version}")
+    print(f"Module path: {spec.origin}")  # absolute path to the .so file
+else:
+    print(f"Could not find path for module {class_version}")
 
 path = os.path.join(CONNECT_PATH, f'data/{param.jobname}')
 if sampling == 'iterative':
