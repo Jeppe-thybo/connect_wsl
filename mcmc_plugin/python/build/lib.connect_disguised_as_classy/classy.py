@@ -14,8 +14,8 @@ CONNECT_PATH = Path(FILE_PATH).parents[3]
 p_backup = [(i,sys.path.pop(i)) for i, p in enumerate(sys.path) if 'connect_disguised_as_classy' in p]
 m_backup = sys.modules.pop('classy')
 
-import classy as real_classy
-from classy import CosmoSevereError, CosmoComputationError
+import classy_NEDE as real_classy
+from classy_NEDE import CosmoSevereError, CosmoComputationError
 
 
 class Class(real_classy.Class):
@@ -30,7 +30,7 @@ class Class(real_classy.Class):
         if not model_name == None:
             self.model_name = model_name
         self._model_name = model_name
-        self.compute_class_background = False
+        self.compute_class_background = True
 
             
     @property

@@ -116,11 +116,14 @@ class Sampling():
             N_acc = mcmc.get_number_of_accepted_steps(i)
             print(f'Number of accepted steps: {N_acc}', flush=True)
             if i == 1 and not self.param.keep_first_iteration:
-                N_keep = 5000
+                N_keep = 100
             else:
                 N_keep = self.param.N_max_points
             N_keep = mcmc.filter_chains(N_keep,i)
-            print(f'Keeping only last {N_keep} of the accepted Markovian steps', flush=True)
+
+            no_of_accepted_steps_to_keep = min(50000, N_acc)
+
+            print(f'Keeping only last {no_of_accepted_steps_to_keep} of the accepted Markovian steps', flush=True)
             print('Comparing latest iterations...', flush=True)
             if i > 1 and not kill_iteration:
                 kill_iteration = mcmc.compare_iterations(i)
