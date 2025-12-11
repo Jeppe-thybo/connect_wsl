@@ -1,0 +1,164 @@
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ /!\ Detecting empty folder, logging the parameter file
+ Initializing Planck likelihood, version Plik_v22_cmbonly_like                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+----
+clik version 3be036bbb4f9
+  plik_cmbonly
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/hi_l/plik_lite/plik_lite_v22_TTTEEE.clik' on test data. got -292.286 expected -292.286 (diff -3.86223e-09)
+----
+<class 'montepython.likelihood_class.Likelihood_clik'>
+<class 'montepython.likelihoods.Planck_lowl_EE.Planck_lowl_EE'>
+Initializing SimAll
+----
+clik version 3be036bbb4f9
+  simall simall_EE_BB_TE
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik' on test data. got -197.99 expected -197.99 (diff -4.1778e-08)
+----
+----
+clik version 3be036bbb4f9
+  gibbs_gauss b13c8fda-1837-41b5-ae2d-78d6b723fcf1
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik' on test data. got -11.6257 expected -11.6257 (diff -1.07424e-09)
+----
+Checking lensing likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/lensing/smicadx12_Dec5_ftl_mv2_ndclpp_p_teb_consext8.clik_lensing' on test data. got -4.42102
+Creating /home/jeppethybo/connect_public/data/lcdm/number_4/2025-11-26_1000000__1.txt
+
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ Initializing Planck likelihood, version Plik_v22_cmbonly_like                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+----
+clik version 3be036bbb4f9
+  plik_cmbonly
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/hi_l/plik_lite/plik_lite_v22_TTTEEE.clik' on test data. got -292.286 expected -292.286 (diff -3.86223e-09)
+----
+<class 'montepython.likelihood_class.Likelihood_clik'>
+<class 'montepython.likelihoods.Planck_lowl_EE.Planck_lowl_EE'>
+Initializing SimAll
+----
+clik version 3be036bbb4f9
+  simall simall_EE_BB_TE
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik' on test data. got -197.99 expected -197.99 (diff -4.1778e-08)
+----
+----
+clik version 3be036bbb4f9
+  gibbs_gauss b13c8fda-1837-41b5-ae2d-78d6b723fcf1
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik' on test data. got -11.6257 expected -11.6257 (diff -1.07424e-09)
+----
+Checking lensing likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/lensing/smicadx12_Dec5_ftl_mv2_ndclpp_p_teb_consext8.clik_lensing' on test data. got -4.42102
+Creating /home/jeppethybo/connect_public/data/lcdm/number_4/2025-11-26_1000000__2.txt
+
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ Initializing Planck likelihood, version Plik_v22_cmbonly_like                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+----
+clik version 3be036bbb4f9
+  plik_cmbonly
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/hi_l/plik_lite/plik_lite_v22_TTTEEE.clik' on test data. got -292.286 expected -292.286 (diff -3.86223e-09)
+----
+<class 'montepython.likelihood_class.Likelihood_clik'>
+<class 'montepython.likelihoods.Planck_lowl_EE.Planck_lowl_EE'>
+Initializing SimAll
+----
+clik version 3be036bbb4f9
+  simall simall_EE_BB_TE
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik' on test data. got -197.99 expected -197.99 (diff -4.1778e-08)
+----
+----
+clik version 3be036bbb4f9
+  gibbs_gauss b13c8fda-1837-41b5-ae2d-78d6b723fcf1
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik' on test data. got -11.6257 expected -11.6257 (diff -1.07424e-09)
+----
+Checking lensing likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/lensing/smicadx12_Dec5_ftl_mv2_ndclpp_p_teb_consext8.clik_lensing' on test data. got -4.42102
+Creating /home/jeppethybo/connect_public/data/lcdm/number_4/2025-11-26_1000000__3.txt
+
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ Initializing Planck likelihood, version Plik_v22_cmbonly_like                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+----
+clik version 3be036bbb4f9
+  plik_cmbonly
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/hi_l/plik_lite/plik_lite_v22_TTTEEE.clik' on test data. got -292.286 expected -292.286 (diff -3.86223e-09)
+----
+<class 'montepython.likelihood_class.Likelihood_clik'>
+<class 'montepython.likelihoods.Planck_lowl_EE.Planck_lowl_EE'>
+Initializing SimAll
+----
+clik version 3be036bbb4f9
+  simall simall_EE_BB_TE
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik' on test data. got -197.99 expected -197.99 (diff -4.1778e-08)
+----
+----
+clik version 3be036bbb4f9
+  gibbs_gauss b13c8fda-1837-41b5-ae2d-78d6b723fcf1
+Checking likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik' on test data. got -11.6257 expected -11.6257 (diff -1.07424e-09)
+----
+Checking lensing likelihood '/home/jeppethybo/connect_public/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/lensing/smicadx12_Dec5_ftl_mv2_ndclpp_p_teb_consext8.clik_lensing' on test data. got -4.42102
+Creating /home/jeppethybo/connect_public/data/lcdm/number_4/2025-11-26_1000000__4.txt
+
+--> Scanning file /home/jeppethybo/connect_public/data/lcdm/number_4/2025-11-26_1000000__2.txt: Removed 833 points of burn-in, and first 50 percent, keep 2086 steps
+                                                                     2025-11-26_1000000__1.txt: Removed 827 points of burn-in, and first 50 percent, keep 1639 steps
+                                                                     2025-11-26_1000000__3.txt: Removed 892 points of burn-in, and first 50 percent, keep 1982 steps
+                                                                     2025-11-26_1000000__4.txt: Removed 839 points of burn-in, and first 50 percent, keep 2038 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.006801 	for  omega_b
+           0.005936 	for  omega_cdm
+           0.005096 	for  H0
+           0.019575 	for  ln10^{10}A_s
+           0.017040 	for  n_s
+           0.018113 	for  tau_reio
+           0.002340 	for  A_planck
+           0.016707 	for  z_reio
+           0.012694 	for  Omega_Lambda
+           0.010859 	for  YHe
+           0.020586 	for  A_s
+           0.015897 	for  sigma8
+           0.003960 	for  100*theta_s
+--> Not computing covariance matrix
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /home/jeppethybo/connect_public/data/lcdm/number_4/2025-11-26_1000000__2.txt: Removed 833 points of burn-in, and first 50 percent, keep 4806 steps
+                                                                     2025-11-26_1000000__1.txt: Removed 827 points of burn-in, and first 50 percent, keep 3862 steps
+                                                                     2025-11-26_1000000__3.txt: Removed 892 points of burn-in, and first 50 percent, keep 4709 steps
+                                                                     2025-11-26_1000000__4.txt: Removed 839 points of burn-in, and first 50 percent, keep 4798 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.005686 	for  omega_b
+           0.013722 	for  omega_cdm
+           0.012111 	for  H0
+           0.014885 	for  ln10^{10}A_s
+           0.008491 	for  n_s
+           0.017545 	for  tau_reio
+           0.002174 	for  A_planck
+           0.016707 	for  z_reio
+           0.014520 	for  Omega_Lambda
+           0.008922 	for  YHe
+           0.014982 	for  A_s
+           0.006906 	for  sigma8
+           0.002802 	for  100*theta_s
+--> Not computing covariance matrix
+--> Scanning file /home/jeppethybo/connect_public/data/lcdm/number_4/2025-11-26_1000000__2.txt: Removed 833 points of burn-in, and first 50 percent, keep 7529 steps
+                                                                     2025-11-26_1000000__1.txt: Removed 827 points of burn-in, and first 50 percent, keep 6047 steps
+                                                                     2025-11-26_1000000__3.txt: Removed 892 points of burn-in, and first 50 percent, keep 7484 steps
+                                                                     2025-11-26_1000000__4.txt: Removed 839 points of burn-in, and first 50 percent, keep 7528 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.005132 	for  omega_b
+           0.003567 	for  omega_cdm
+           0.003781 	for  H0
+           0.002612 	for  ln10^{10}A_s
+           0.002640 	for  n_s
+           0.003526 	for  tau_reio
+           0.000686 	for  A_planck
+           0.003318 	for  z_reio
+           0.003532 	for  Omega_Lambda
+           0.004749 	for  YHe
+           0.002684 	for  A_s
+           0.001736 	for  sigma8
+           0.009212 	for  100*theta_s
+--> Not computing covariance matrix

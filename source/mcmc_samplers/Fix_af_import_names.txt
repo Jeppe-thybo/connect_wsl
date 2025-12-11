@@ -1,0 +1,72 @@
+def import_points_from_chains(self,
+                              iteration  # Current iteration number
+                             ):
+
+        def mp_name(name):
+            return name.replace('*','')
+
+        def connect_name(name):
+            return '100*theta_s' if name == '100theta_s' else name
+
+        # --- parameter names ---
+        paramnames = list(self.param.parameters.keys())             # original names
+        paramnames_mp = [mp_name(s) for s in paramnames]           # MontePython-friendly names
+
+        # --- read model scales ---
+        model_param_scales = []
+        with open(f'data/{self.param.jobname}/number_{iteration}/log.param','r') as f:
+            lines = list(f)
+        for i, name in enumerate(paramnames_mp):
+            found = False
+            for line in lines:
+                if name in self.param.log_priors:
+                    if line.startswith(f"data.parameters['{name}_log10_prior']") and line.split("'")[-2] == 'cosmo':
+                        model_param_scales.append(np.float32(line.split('=')[-1].replace(' ','').split(',')[4]))
+                        found = True
+                        break
+                else:
+                    if line.startswith(f"data.parameters['{name}']") and line.split("'")[-2] == 'cosmo':
+                        model_param_scales.append(np.float32(line.split('=')[-1].replace(' ','').split(',')[4]))
+                        found = True
+                        break
+            if not found:
+                model_param_scales.append(1.0)
+        model_param_scales = np.array(model_param_scales, dtype=np.float32)
+
+        # --- read parameter names from .paramnames ---
+        mp_names = []
+        paramnames_file = [f for f in os.listdir(f'data/{self.param.jobname}/number_{iteration}') if f.endswith('.paramnames')][0]
+        with open(f'data/{self.param.jobname}/number_{iteration}/' + paramnames_file, 'r') as f:
+            list_f = list(f)
+        for line in list_f[0:len(paramnames)]:
+            name = line.replace(' ','').split('\t')[0]
+            if name[-12:] == '_log10_prior' and name[:-12] in self.param.log_priors:
+                name = name[:-12]
+            mp_names.append(connect_name(name))
+
+        # --- build scale dictionary ---
+        scale_dict = dict(zip(paramnames_mp, model_param_scales))
+
+        # --- read chains and apply scales ---
+        lines = []
+        data = []
+        files = sorted([f for f in os.listdir(f'data/{self.param.jobname}/number_{iteration}') if f.endswith('.txt')])
+        for filename in files:
+            with open(f'data/{self.param.jobname}/number_{iteration}/' + filename, 'r') as f:
+                list_f = list(f)
+            lines += list_f
+            for line in list_f:
+                if line[0] != '#':
+                    params = np.float32(line.replace('\n','').split('\t')[1:len(paramnames)+1])
+                    # apply log-prior exponentials
+                    for name in self.param.log_priors:
+                        k = mp_names.index(name)
+                        params[k] = np.power(10., params[k])
+                    # apply scales using dictionary to ensure correct alignment
+                    params_scaled = np.array([params[j] * scale_dict[paramnames_mp[j]] for j in range(len(params))], dtype=np.float32)
+                    data.append(params_scaled)
+
+        return np.array(data)
+
+
+        

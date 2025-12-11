@@ -1,0 +1,10 @@
+/data/lhc_samples/*.sample
+/resources/
+/jobscripts/*
+/*.out
+*__pycache__/
+mcmc_plugin/connect.conf
+!/input/example.param
+!/jobscripts/example.js
+.DS_Store
+._.DS_Store

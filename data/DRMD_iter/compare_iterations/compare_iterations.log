@@ -1,0 +1,5 @@
+chain__11.txt	  Number of steps:3613	 Steps accepted:1000	 acc = 0.28	min(-loglike) = 100.59
+chain__10.txt	  Number of steps:3590	 Steps accepted:1000	 acc = 0.28	min(-loglike) = 100.82
+--> Total    number    of    steps: 7203
+--> Total number of accepted steps: 2000
+--> Minimum of -logLike           : 100.59
