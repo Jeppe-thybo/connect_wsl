@@ -1,1 +1,0 @@
-# omega_b	omega_cdm	100*theta_s	ln10^{10}A_s	n_s	tau_reio	r	m_ncdm_interacting	log10_G_eff_ur	deg_ncdm_interacting

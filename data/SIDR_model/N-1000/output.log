@@ -23,7 +23,7 @@
 Running CONNECT
 Parameter file     :  input/SIDR.param
 Mode               :  Create
-Sampling method    :  Latin Hypercube
+Sampling method    :  Hypersphere
 
 --------------------------------------------------------------
 
