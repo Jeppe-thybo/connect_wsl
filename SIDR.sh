@@ -2,10 +2,12 @@
 #SBATCH --job-name=SIDR
 #SBATCH --partition=qany
 #SBATCH --mem-per-cpu=2g
-#SBATCH --ntasks=200
+#SBATCH --ntasks=36
 #SBATCH --cpus-per-task=1
-#SBATCH --time=04:00:00
+#SBATCH --time=24:00:00
 #SBATCH --output=SIDR.out
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=jeppethybo@live.dk
 echo "========= Job started at `date` =========="
 
 # activate proper environment if needed

@@ -13,13 +13,16 @@ parameters={'omega_b'        :  [ 0.014,          0.03           ],
             'tau_reio'       :  [ 0.01,           0.2            ],
             'delta_Neff_drmd':  [ 0,              3              ],
             'f_idm_drmd'     :  [ 0,              1              ],
-            'log10z_stop'    :  [ 2,              5              ]
+            'log10z_stop'    :  [ 2,              5              ],
+            'log10_G_over_aH_drmd': [2,          14              ]
 }
 
 
 # Specify additional parameters
 
 class_version = 'classy_NEDE'
+
+max_time_for_theory = 30
 
 
 #########--------- Training parameters ---------#########
@@ -29,7 +32,7 @@ train_ratio          = 0.95		  # Amount of data used for training
 
 val_ratio            = 0.05	      	  # Amount of training data used for validation
 
-epochs               = 800	      	  # Number of cycles/epochs during training
+epochs               = 2000	      	  # Number of cycles/epochs during training
 
 batchsize            = 64	          # Batchsize of data when training
 
@@ -93,14 +96,24 @@ extra_input    = {'k_pivot': 0.05,	    # Extra input to CLASS
 		  'T_ncdm':  0.71611,
 		  }
 
-#bestfit_guesses = {'parameter': value}  # Guesses for bestfit for parameters
+# bestfit_guesses = {'omega_b':              2.313,
+#                   'omega_cdm':            0.1353,
+#                   'h':                    0.7289,
+#                   'ln10^{10}A_s':         3.050,
+#                   'n_s':                  0.9783,
+#                   'tau_reio':             0.0609,
+#                   'delta_Neff_drmd':      0.83,
+#                   'f_idm_drmd':           0.0285,
+#                   'log10z_stop':          4.83,
+#                   'log10_G_over_aH_drmd': 13.057
+#}  # Guesses for bestfit for parameters
 
 #sigma_guesses   = {'parameter': value}  # Guesses for sigma for parameters 
 
 prior_ranges     = parameters            # Prior ranges for mcmc sampling. A dictionary
                                          # in the same form as parameters
 
-#log_priors      = []                    # List of parameter names to be sampled
+#log_priors      = []                     # List of parameter names to be sampled
                                          # with a logarithmic prior
 
 
@@ -109,7 +122,7 @@ sampling      = 'iterative'    # Sampling of training data can be done with the
                                # are only usable wth the iterative method
 
 
-hypersphere_covmat = '/home/jeppethybo/connect_public/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat'
+hypersphere_covmat = '/home/jthybo/connect_wsl/resources/montepython_public/covmat/DRMD_base_M.covmat'
 
 mcmc_sampler  = 'montepython'  # mcmc sampler to use in iterations (cobaya or montepython)
 
@@ -130,8 +143,8 @@ sampling_likelihoods = ['Planck_highl_TTTEEE_lite', 'Planck_lowl_EE', 'Planck_lo
 
 #########---------- Saving parameters ----------#########
 
-jobname = 'DRMD_iter'     # Name job and output folder
+jobname = 'DRMD_grendel_iter'     # Name job and output folder
 
-save_name = 'DRMD_iter'        # Name of trained models
+save_name = 'DRMD_grendel_iter'        # Name of trained models
 
 overwrite_model = True      # Whether or not to overwrite model names or to append a suffix

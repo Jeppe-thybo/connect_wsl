@@ -447,7 +447,7 @@ class Training():
                                       validation_data=self.val_dataset,
                                       callbacks=[KeepBestEpoch(),
                                                  EarlyStopping(monitor='val_loss',
-                                                               patience=250,
+                                                               patience=200,
                                                                restore_best_weights=True)],)
 
         if output_file != None:
