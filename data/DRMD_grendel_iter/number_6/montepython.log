@@ -1,0 +1,1117 @@
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ /!\ Detecting empty folder, logging the parameter file
+ Initializing Planck likelihood, version Plik_v22_cmbonly_like                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+----
+clik version 3be036bbb4f9
+  plik_cmbonly
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/hi_l/plik_lite/plik_lite_v22_TTTEEE.clik' on test data. got -292.286 expected -292.286 (diff -3.86228e-09)
+----
+<class 'montepython.likelihood_class.Likelihood_clik'>
+<class 'montepython.likelihoods.Planck_lowl_EE.Planck_lowl_EE'>
+Initializing SimAll
+----
+clik version 3be036bbb4f9
+  simall simall_EE_BB_TE
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik' on test data. got -197.99 expected -197.99 (diff -4.1778e-08)
+----
+----
+clik version 3be036bbb4f9
+  gibbs_gauss b13c8fda-1837-41b5-ae2d-78d6b723fcf1
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik' on test data. got -11.6257 expected -11.6257 (diff -1.07424e-09)
+----
+Creating /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt
+
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ Initializing Planck likelihood, version Plik_v22_cmbonly_like                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+----
+clik version 3be036bbb4f9
+  plik_cmbonly
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/hi_l/plik_lite/plik_lite_v22_TTTEEE.clik' on test data. got -292.286 expected -292.286 (diff -3.86228e-09)
+----
+<class 'montepython.likelihood_class.Likelihood_clik'>
+<class 'montepython.likelihoods.Planck_lowl_EE.Planck_lowl_EE'>
+Initializing SimAll
+----
+clik version 3be036bbb4f9
+  simall simall_EE_BB_TE
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik' on test data. got -197.99 expected -197.99 (diff -4.1778e-08)
+----
+----
+clik version 3be036bbb4f9
+  gibbs_gauss b13c8fda-1837-41b5-ae2d-78d6b723fcf1
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik' on test data. got -11.6257 expected -11.6257 (diff -1.07424e-09)
+----
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+Creating /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__2.txt
+
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ Initializing Planck likelihood, version Plik_v22_cmbonly_like                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+----
+clik version 3be036bbb4f9
+  plik_cmbonly
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/hi_l/plik_lite/plik_lite_v22_TTTEEE.clik' on test data. got -292.286 expected -292.286 (diff -3.86228e-09)
+----
+<class 'montepython.likelihood_class.Likelihood_clik'>
+<class 'montepython.likelihoods.Planck_lowl_EE.Planck_lowl_EE'>
+Initializing SimAll
+----
+clik version 3be036bbb4f9
+  simall simall_EE_BB_TE
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik' on test data. got -197.99 expected -197.99 (diff -4.1778e-08)
+----
+----
+clik version 3be036bbb4f9
+  gibbs_gauss b13c8fda-1837-41b5-ae2d-78d6b723fcf1
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik' on test data. got -11.6257 expected -11.6257 (diff -1.07424e-09)
+----
+Creating /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__3.txt
+
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+ Initializing Planck likelihood, version Plik_v22_cmbonly_like                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+----
+clik version 3be036bbb4f9
+  plik_cmbonly
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/hi_l/plik_lite/plik_lite_v22_TTTEEE.clik' on test data. got -292.286 expected -292.286 (diff -3.86228e-09)
+----
+<class 'montepython.likelihood_class.Likelihood_clik'>
+<class 'montepython.likelihoods.Planck_lowl_EE.Planck_lowl_EE'>
+Initializing SimAll
+----
+clik version 3be036bbb4f9
+  simall simall_EE_BB_TE
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/simall/simall_100x143_offlike5_EE_Aplanck_B.clik' on test data. got -197.99 expected -197.99 (diff -4.1778e-08)
+----
+----
+clik version 3be036bbb4f9
+  gibbs_gauss b13c8fda-1837-41b5-ae2d-78d6b723fcf1
+Checking likelihood '/home/jthybo/connect_wsl/resources/planck2018/code/plc_3.0/plc-3.01/../../../baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik' on test data. got -11.6257 expected -11.6257 (diff -1.07424e-09)
+----
+Creating /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__4.txt
+
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed everything: chain not converged
+                                                                           2025-12-16_1000000__3.txt: Removed 3487 points of burn-in, and first 50 percent, keep 147 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 719 points of burn-in, and first 50 percent, keep 273 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2963 points of burn-in, and first 50 percent, keep 121 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 4.767998 	for  omega_b
+           11.845536 	for  omega_cdm
+           8.301039 	for  h
+           2.187874 	for  ln10^{10}A_s
+           0.298177 	for  n_s
+           0.754918 	for  tau_reio
+           38.621773 	for  delta_Neff_drmd
+           0.823786 	for  f_idm_drmd
+           2.188511 	for  log10z_stop
+           38.368705 	for  log10_G_over_aH_drmd
+           24.812011 	for  A_planck
+           0.966496 	for  z_reio
+           1.475995 	for  Omega_Lambda
+           2.441276 	for  YHe
+           2.363067 	for  A_s
+           0.113066 	for  sigma8
+           0.110059 	for  100*theta_s
+           7.910666 	for  H0
+           55.682022 	for  rs_d
+           13.641194 	for  Omega_m
+           36.352765 	for  f_drmd
+           14.843988 	for  z_dec_drmd
+--> Not computing covariance matrix
+ /!\ PyMultiNest detected but MultiNest likely not installed correctly. You can
+     safely ignore this if not running with option -m NS
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 214 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3526 points of burn-in, and first 50 percent, keep 862 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 987 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 781 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 2.163993 	for  omega_b
+           11.526099 	for  omega_cdm
+           0.821826 	for  h
+           0.206172 	for  ln10^{10}A_s
+           1.192811 	for  n_s
+           0.444107 	for  tau_reio
+           9.399860 	for  delta_Neff_drmd
+           4.005163 	for  f_idm_drmd
+           0.420706 	for  log10z_stop
+           1.944312 	for  log10_G_over_aH_drmd
+           0.896418 	for  A_planck
+           0.372203 	for  z_reio
+           0.393610 	for  Omega_Lambda
+           1.424166 	for  YHe
+           0.238927 	for  A_s
+           0.496701 	for  sigma8
+           1.572035 	for  100*theta_s
+           0.830697 	for  H0
+           16.609796 	for  rs_d
+           2.411473 	for  Omega_m
+           9.235380 	for  f_drmd
+           1.018277 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 684 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3526 points of burn-in, and first 50 percent, keep 1512 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 1705 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 1481 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 2.459637 	for  omega_b
+           7.371578 	for  omega_cdm
+           1.341648 	for  h
+           0.127506 	for  ln10^{10}A_s
+           1.138790 	for  n_s
+           0.239752 	for  tau_reio
+           9.237221 	for  delta_Neff_drmd
+           1.524973 	for  f_idm_drmd
+           0.275498 	for  log10z_stop
+           3.713142 	for  log10_G_over_aH_drmd
+           1.336242 	for  A_planck
+           0.201793 	for  z_reio
+           0.171265 	for  Omega_Lambda
+           1.657626 	for  YHe
+           0.133792 	for  A_s
+           0.397027 	for  sigma8
+           0.990315 	for  100*theta_s
+           1.395278 	for  H0
+           19.040426 	for  rs_d
+           0.835650 	for  Omega_m
+           9.020327 	for  f_drmd
+           0.913524 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 1157 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3526 points of burn-in, and first 50 percent, keep 2142 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 2437 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 2206 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.271966 	for  omega_b
+           3.698299 	for  omega_cdm
+           0.806024 	for  h
+           0.042638 	for  ln10^{10}A_s
+           0.378039 	for  n_s
+           0.164528 	for  tau_reio
+           4.668668 	for  delta_Neff_drmd
+           1.011561 	for  f_idm_drmd
+           0.042079 	for  log10z_stop
+           3.328124 	for  log10_G_over_aH_drmd
+           1.170035 	for  A_planck
+           0.117143 	for  z_reio
+           0.263191 	for  Omega_Lambda
+           1.044634 	for  YHe
+           0.055851 	for  A_s
+           0.267063 	for  sigma8
+           0.588732 	for  100*theta_s
+           0.808913 	for  H0
+           6.710734 	for  rs_d
+           0.546242 	for  Omega_m
+           4.602546 	for  f_drmd
+           1.377316 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 1642 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3526 points of burn-in, and first 50 percent, keep 2925 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 3175 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 2938 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.782836 	for  omega_b
+           2.376014 	for  omega_cdm
+           0.440083 	for  h
+           0.091182 	for  ln10^{10}A_s
+           0.209161 	for  n_s
+           0.036870 	for  tau_reio
+           2.551809 	for  delta_Neff_drmd
+           0.497056 	for  f_idm_drmd
+           0.023301 	for  log10z_stop
+           3.786907 	for  log10_G_over_aH_drmd
+           1.100155 	for  A_planck
+           0.025521 	for  z_reio
+           0.069991 	for  Omega_Lambda
+           0.651473 	for  YHe
+           0.104879 	for  A_s
+           0.078089 	for  sigma8
+           0.365309 	for  100*theta_s
+           0.424439 	for  H0
+           4.010276 	for  rs_d
+           0.225820 	for  Omega_m
+           2.712472 	for  f_drmd
+           0.955838 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 2114 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3526 points of burn-in, and first 50 percent, keep 3685 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 3942 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 3688 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 1.152790 	for  omega_b
+           2.954383 	for  omega_cdm
+           0.837564 	for  h
+           0.041479 	for  ln10^{10}A_s
+           0.115733 	for  n_s
+           0.060399 	for  tau_reio
+           3.161976 	for  delta_Neff_drmd
+           0.450476 	for  f_idm_drmd
+           0.117708 	for  log10z_stop
+           5.127155 	for  log10_G_over_aH_drmd
+           1.080545 	for  A_planck
+           0.043663 	for  z_reio
+           0.168812 	for  Omega_Lambda
+           0.996138 	for  YHe
+           0.055296 	for  A_s
+           0.059880 	for  sigma8
+           0.214726 	for  100*theta_s
+           0.806438 	for  H0
+           5.233442 	for  rs_d
+           0.360215 	for  Omega_m
+           3.392773 	for  f_drmd
+           1.098460 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 2559 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 4333 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 4720 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 4373 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.675610 	for  omega_b
+           2.361206 	for  omega_cdm
+           0.348433 	for  h
+           0.033284 	for  ln10^{10}A_s
+           0.017527 	for  n_s
+           0.035013 	for  tau_reio
+           1.403329 	for  delta_Neff_drmd
+           0.303309 	for  f_idm_drmd
+           0.058666 	for  log10z_stop
+           1.216755 	for  log10_G_over_aH_drmd
+           0.370865 	for  A_planck
+           0.023331 	for  z_reio
+           0.096746 	for  Omega_Lambda
+           0.599084 	for  YHe
+           0.048256 	for  A_s
+           0.008605 	for  sigma8
+           0.112661 	for  100*theta_s
+           0.340786 	for  H0
+           2.845043 	for  rs_d
+           0.205954 	for  Omega_m
+           1.470876 	for  f_drmd
+           0.632729 	for  z_dec_drmd
+--> Computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 3044 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 4924 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 5268 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 4886 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.192876 	for  omega_b
+           0.831728 	for  omega_cdm
+           0.139127 	for  h
+           0.028583 	for  ln10^{10}A_s
+           0.009900 	for  n_s
+           0.040415 	for  tau_reio
+           0.519149 	for  delta_Neff_drmd
+           0.219696 	for  f_idm_drmd
+           0.130884 	for  log10z_stop
+           0.291004 	for  log10_G_over_aH_drmd
+           0.116218 	for  A_planck
+           0.027690 	for  z_reio
+           0.087223 	for  Omega_Lambda
+           0.181088 	for  YHe
+           0.038369 	for  A_s
+           0.014429 	for  sigma8
+           0.066841 	for  100*theta_s
+           0.135326 	for  H0
+           0.837199 	for  rs_d
+           0.129361 	for  Omega_m
+           0.537837 	for  f_drmd
+           0.282684 	for  z_dec_drmd
+--> Computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 3547 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 5467 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 5746 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 5334 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.062817 	for  omega_b
+           0.168175 	for  omega_cdm
+           0.078282 	for  h
+           0.022278 	for  ln10^{10}A_s
+           0.038069 	for  n_s
+           0.020263 	for  tau_reio
+           0.200381 	for  delta_Neff_drmd
+           0.047093 	for  f_idm_drmd
+           0.082330 	for  log10z_stop
+           0.114062 	for  log10_G_over_aH_drmd
+           0.039362 	for  A_planck
+           0.015986 	for  z_reio
+           0.028009 	for  Omega_Lambda
+           0.058432 	for  YHe
+           0.026917 	for  A_s
+           0.025761 	for  sigma8
+           0.025163 	for  100*theta_s
+           0.075403 	for  H0
+           0.216201 	for  rs_d
+           0.039135 	for  Omega_m
+           0.206033 	for  f_drmd
+           0.127971 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 4032 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 5929 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 6218 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 5757 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.040536 	for  omega_b
+           0.082746 	for  omega_cdm
+           0.053837 	for  h
+           0.023570 	for  ln10^{10}A_s
+           0.026250 	for  n_s
+           0.019314 	for  tau_reio
+           0.135221 	for  delta_Neff_drmd
+           0.010902 	for  f_idm_drmd
+           0.058411 	for  log10z_stop
+           0.063018 	for  log10_G_over_aH_drmd
+           0.022695 	for  A_planck
+           0.017656 	for  z_reio
+           0.006194 	for  Omega_Lambda
+           0.036453 	for  YHe
+           0.028093 	for  A_s
+           0.010249 	for  sigma8
+           0.009927 	for  100*theta_s
+           0.052181 	for  H0
+           0.127252 	for  rs_d
+           0.011569 	for  Omega_m
+           0.137109 	for  f_drmd
+           0.093255 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 4534 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 6484 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 6773 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 6342 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.017973 	for  omega_b
+           0.041586 	for  omega_cdm
+           0.037099 	for  h
+           0.012924 	for  ln10^{10}A_s
+           0.011174 	for  n_s
+           0.009407 	for  tau_reio
+           0.080377 	for  delta_Neff_drmd
+           0.002276 	for  f_idm_drmd
+           0.041288 	for  log10z_stop
+           0.033004 	for  log10_G_over_aH_drmd
+           0.014362 	for  A_planck
+           0.008091 	for  z_reio
+           0.006371 	for  Omega_Lambda
+           0.014995 	for  YHe
+           0.014687 	for  A_s
+           0.006072 	for  sigma8
+           0.005694 	for  100*theta_s
+           0.036110 	for  H0
+           0.067230 	for  rs_d
+           0.008512 	for  Omega_m
+           0.079097 	for  f_drmd
+           0.042724 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 5017 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 7014 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 7293 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 6877 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.008929 	for  omega_b
+           0.032091 	for  omega_cdm
+           0.020546 	for  h
+           0.008920 	for  ln10^{10}A_s
+           0.011815 	for  n_s
+           0.008017 	for  tau_reio
+           0.052581 	for  delta_Neff_drmd
+           0.006481 	for  f_idm_drmd
+           0.021918 	for  log10z_stop
+           0.032685 	for  log10_G_over_aH_drmd
+           0.012334 	for  A_planck
+           0.006620 	for  z_reio
+           0.002534 	for  Omega_Lambda
+           0.006409 	for  YHe
+           0.009177 	for  A_s
+           0.014195 	for  sigma8
+           0.005292 	for  100*theta_s
+           0.019969 	for  H0
+           0.044017 	for  rs_d
+           0.003915 	for  Omega_m
+           0.050956 	for  f_drmd
+           0.018345 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 5522 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 7512 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 7791 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 7397 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.020519 	for  omega_b
+           0.050460 	for  omega_cdm
+           0.015100 	for  h
+           0.003795 	for  ln10^{10}A_s
+           0.013712 	for  n_s
+           0.006795 	for  tau_reio
+           0.056147 	for  delta_Neff_drmd
+           0.008128 	for  f_idm_drmd
+           0.007865 	for  log10z_stop
+           0.054165 	for  log10_G_over_aH_drmd
+           0.012059 	for  A_planck
+           0.005782 	for  z_reio
+           0.001890 	for  Omega_Lambda
+           0.017361 	for  YHe
+           0.004056 	for  A_s
+           0.012958 	for  sigma8
+           0.004105 	for  100*theta_s
+           0.014775 	for  H0
+           0.061971 	for  rs_d
+           0.004025 	for  Omega_m
+           0.055420 	for  f_drmd
+           0.033159 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 6022 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 8042 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 8316 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 7944 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.024265 	for  omega_b
+           0.053303 	for  omega_cdm
+           0.016441 	for  h
+           0.004974 	for  ln10^{10}A_s
+           0.012135 	for  n_s
+           0.007165 	for  tau_reio
+           0.057897 	for  delta_Neff_drmd
+           0.006517 	for  f_idm_drmd
+           0.002731 	for  log10z_stop
+           0.056840 	for  log10_G_over_aH_drmd
+           0.013598 	for  A_planck
+           0.006700 	for  z_reio
+           0.001299 	for  Omega_Lambda
+           0.020929 	for  YHe
+           0.005046 	for  A_s
+           0.010401 	for  sigma8
+           0.003138 	for  100*theta_s
+           0.016027 	for  H0
+           0.064910 	for  rs_d
+           0.003495 	for  Omega_m
+           0.057440 	for  f_drmd
+           0.031181 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 6459 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 8532 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 8783 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 8449 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.018454 	for  omega_b
+           0.051701 	for  omega_cdm
+           0.015698 	for  h
+           0.010223 	for  ln10^{10}A_s
+           0.016401 	for  n_s
+           0.008214 	for  tau_reio
+           0.058297 	for  delta_Neff_drmd
+           0.008641 	for  f_idm_drmd
+           0.010468 	for  log10z_stop
+           0.033223 	for  log10_G_over_aH_drmd
+           0.010039 	for  A_planck
+           0.007721 	for  z_reio
+           0.000978 	for  Omega_Lambda
+           0.015506 	for  YHe
+           0.011598 	for  A_s
+           0.006005 	for  sigma8
+           0.001022 	for  100*theta_s
+           0.015476 	for  H0
+           0.063271 	for  rs_d
+           0.003088 	for  Omega_m
+           0.057592 	for  f_drmd
+           0.040959 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 6954 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 9082 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 9311 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 8934 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.015284 	for  omega_b
+           0.064489 	for  omega_cdm
+           0.012567 	for  h
+           0.010238 	for  ln10^{10}A_s
+           0.008593 	for  n_s
+           0.010148 	for  tau_reio
+           0.063388 	for  delta_Neff_drmd
+           0.012222 	for  f_idm_drmd
+           0.011130 	for  log10z_stop
+           0.024427 	for  log10_G_over_aH_drmd
+           0.007049 	for  A_planck
+           0.008250 	for  z_reio
+           0.002986 	for  Omega_Lambda
+           0.012800 	for  YHe
+           0.012039 	for  A_s
+           0.002440 	for  sigma8
+           0.002322 	for  100*theta_s
+           0.012355 	for  H0
+           0.072634 	for  rs_d
+           0.005527 	for  Omega_m
+           0.062737 	for  f_drmd
+           0.039967 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 7452 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 9622 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 9836 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 9472 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.013755 	for  omega_b
+           0.039985 	for  omega_cdm
+           0.017265 	for  h
+           0.008093 	for  ln10^{10}A_s
+           0.005148 	for  n_s
+           0.004996 	for  tau_reio
+           0.052339 	for  delta_Neff_drmd
+           0.007826 	for  f_idm_drmd
+           0.006111 	for  log10z_stop
+           0.017353 	for  log10_G_over_aH_drmd
+           0.006452 	for  A_planck
+           0.004388 	for  z_reio
+           0.000115 	for  Omega_Lambda
+           0.010800 	for  YHe
+           0.009531 	for  A_s
+           0.006097 	for  sigma8
+           0.002012 	for  100*theta_s
+           0.017070 	for  H0
+           0.051268 	for  rs_d
+           0.001557 	for  Omega_m
+           0.051387 	for  f_drmd
+           0.025575 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 7932 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 10144 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 10323 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 10012 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.016303 	for  omega_b
+           0.029915 	for  omega_cdm
+           0.021076 	for  h
+           0.006884 	for  ln10^{10}A_s
+           0.005052 	for  n_s
+           0.001960 	for  tau_reio
+           0.046524 	for  delta_Neff_drmd
+           0.009142 	for  f_idm_drmd
+           0.001312 	for  log10z_stop
+           0.016568 	for  log10_G_over_aH_drmd
+           0.005579 	for  A_planck
+           0.001919 	for  z_reio
+           0.001388 	for  Omega_Lambda
+           0.013274 	for  YHe
+           0.008204 	for  A_s
+           0.003578 	for  sigma8
+           0.002465 	for  100*theta_s
+           0.020966 	for  H0
+           0.043097 	for  rs_d
+           0.002309 	for  Omega_m
+           0.045653 	for  f_drmd
+           0.020474 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 8437 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 10684 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 10831 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 10547 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.031178 	for  omega_b
+           0.028942 	for  omega_cdm
+           0.027202 	for  h
+           0.005396 	for  ln10^{10}A_s
+           0.005182 	for  n_s
+           0.001571 	for  tau_reio
+           0.048901 	for  delta_Neff_drmd
+           0.008617 	for  f_idm_drmd
+           0.001335 	for  log10z_stop
+           0.019681 	for  log10_G_over_aH_drmd
+           0.004235 	for  A_planck
+           0.001915 	for  z_reio
+           0.002534 	for  Omega_Lambda
+           0.027467 	for  YHe
+           0.006887 	for  A_s
+           0.003621 	for  sigma8
+           0.004345 	for  100*theta_s
+           0.027361 	for  H0
+           0.047382 	for  rs_d
+           0.003301 	for  Omega_m
+           0.048245 	for  f_drmd
+           0.024083 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3352 points of burn-in, and first 50 percent, keep 8932 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3679 points of burn-in, and first 50 percent, keep 11219 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 11391 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 11042 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.024828 	for  omega_b
+           0.025758 	for  omega_cdm
+           0.022964 	for  h
+           0.009860 	for  ln10^{10}A_s
+           0.006034 	for  n_s
+           0.004246 	for  tau_reio
+           0.044402 	for  delta_Neff_drmd
+           0.001145 	for  f_idm_drmd
+           0.001250 	for  log10z_stop
+           0.011334 	for  log10_G_over_aH_drmd
+           0.004133 	for  A_planck
+           0.004635 	for  z_reio
+           0.001408 	for  Omega_Lambda
+           0.021740 	for  YHe
+           0.011953 	for  A_s
+           0.005231 	for  sigma8
+           0.002214 	for  100*theta_s
+           0.023155 	for  H0
+           0.041760 	for  rs_d
+           0.002135 	for  Omega_m
+           0.043369 	for  f_drmd
+           0.022857 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 9351 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3681 points of burn-in, and first 50 percent, keep 11726 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 11916 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 11587 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.022327 	for  omega_b
+           0.021229 	for  omega_cdm
+           0.021416 	for  h
+           0.015860 	for  ln10^{10}A_s
+           0.003874 	for  n_s
+           0.010542 	for  tau_reio
+           0.039509 	for  delta_Neff_drmd
+           0.001906 	for  f_idm_drmd
+           0.005366 	for  log10z_stop
+           0.005542 	for  log10_G_over_aH_drmd
+           0.003609 	for  A_planck
+           0.011398 	for  z_reio
+           0.001765 	for  Omega_Lambda
+           0.019614 	for  YHe
+           0.018282 	for  A_s
+           0.003824 	for  sigma8
+           0.001704 	for  100*theta_s
+           0.021756 	for  H0
+           0.036071 	for  rs_d
+           0.002222 	for  Omega_m
+           0.038368 	for  f_drmd
+           0.020237 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 9811 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3681 points of burn-in, and first 50 percent, keep 12226 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 12383 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 12129 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.025452 	for  omega_b
+           0.018057 	for  omega_cdm
+           0.021377 	for  h
+           0.009909 	for  ln10^{10}A_s
+           0.003097 	for  n_s
+           0.007657 	for  tau_reio
+           0.035116 	for  delta_Neff_drmd
+           0.002019 	for  f_idm_drmd
+           0.006846 	for  log10z_stop
+           0.009498 	for  log10_G_over_aH_drmd
+           0.004015 	for  A_planck
+           0.007989 	for  z_reio
+           0.002104 	for  Omega_Lambda
+           0.022532 	for  YHe
+           0.011721 	for  A_s
+           0.003851 	for  sigma8
+           0.002649 	for  100*theta_s
+           0.021904 	for  H0
+           0.032662 	for  rs_d
+           0.002425 	for  Omega_m
+           0.033766 	for  f_drmd
+           0.019518 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 10273 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3681 points of burn-in, and first 50 percent, keep 12723 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 12853 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 12649 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.022990 	for  omega_b
+           0.018268 	for  omega_cdm
+           0.016508 	for  h
+           0.006566 	for  ln10^{10}A_s
+           0.004935 	for  n_s
+           0.005786 	for  tau_reio
+           0.030306 	for  delta_Neff_drmd
+           0.003777 	for  f_idm_drmd
+           0.004860 	for  log10z_stop
+           0.008044 	for  log10_G_over_aH_drmd
+           0.002206 	for  A_planck
+           0.006076 	for  z_reio
+           0.000965 	for  Omega_Lambda
+           0.020534 	for  YHe
+           0.007885 	for  A_s
+           0.003909 	for  sigma8
+           0.003964 	for  100*theta_s
+           0.017186 	for  H0
+           0.030087 	for  rs_d
+           0.001343 	for  Omega_m
+           0.028771 	for  f_drmd
+           0.017998 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 10736 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3681 points of burn-in, and first 50 percent, keep 13231 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 13338 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 13157 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.013642 	for  omega_b
+           0.016875 	for  omega_cdm
+           0.012828 	for  h
+           0.005069 	for  ln10^{10}A_s
+           0.003135 	for  n_s
+           0.007052 	for  tau_reio
+           0.025657 	for  delta_Neff_drmd
+           0.005829 	for  f_idm_drmd
+           0.006673 	for  log10z_stop
+           0.004109 	for  log10_G_over_aH_drmd
+           0.000687 	for  A_planck
+           0.006813 	for  z_reio
+           0.000773 	for  Omega_Lambda
+           0.011273 	for  YHe
+           0.005993 	for  A_s
+           0.003669 	for  sigma8
+           0.004206 	for  100*theta_s
+           0.013403 	for  H0
+           0.025042 	for  rs_d
+           0.001007 	for  Omega_m
+           0.024122 	for  f_drmd
+           0.011033 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 11218 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3681 points of burn-in, and first 50 percent, keep 13768 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 13873 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 13687 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.011213 	for  omega_b
+           0.013241 	for  omega_cdm
+           0.014829 	for  h
+           0.005132 	for  ln10^{10}A_s
+           0.003930 	for  n_s
+           0.005621 	for  tau_reio
+           0.024138 	for  delta_Neff_drmd
+           0.005153 	for  f_idm_drmd
+           0.007920 	for  log10z_stop
+           0.003062 	for  log10_G_over_aH_drmd
+           0.000752 	for  A_planck
+           0.005346 	for  z_reio
+           0.002179 	for  Omega_Lambda
+           0.008782 	for  YHe
+           0.006207 	for  A_s
+           0.003521 	for  sigma8
+           0.005166 	for  100*theta_s
+           0.015426 	for  H0
+           0.020677 	for  rs_d
+           0.002078 	for  Omega_m
+           0.022394 	for  f_drmd
+           0.007268 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 11681 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3681 points of burn-in, and first 50 percent, keep 14223 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 14351 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 14129 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.013884 	for  omega_b
+           0.018123 	for  omega_cdm
+           0.013842 	for  h
+           0.004283 	for  ln10^{10}A_s
+           0.003366 	for  n_s
+           0.004873 	for  tau_reio
+           0.026725 	for  delta_Neff_drmd
+           0.005808 	for  f_idm_drmd
+           0.005254 	for  log10z_stop
+           0.003672 	for  log10_G_over_aH_drmd
+           0.001216 	for  A_planck
+           0.004611 	for  z_reio
+           0.001681 	for  Omega_Lambda
+           0.011281 	for  YHe
+           0.005390 	for  A_s
+           0.003602 	for  sigma8
+           0.004268 	for  100*theta_s
+           0.014381 	for  H0
+           0.025916 	for  rs_d
+           0.001906 	for  Omega_m
+           0.024931 	for  f_drmd
+           0.009067 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 12138 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3681 points of burn-in, and first 50 percent, keep 14773 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 14803 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 14619 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.020328 	for  omega_b
+           0.032027 	for  omega_cdm
+           0.014243 	for  h
+           0.002896 	for  ln10^{10}A_s
+           0.003062 	for  n_s
+           0.005251 	for  tau_reio
+           0.035017 	for  delta_Neff_drmd
+           0.013189 	for  f_idm_drmd
+           0.003500 	for  log10z_stop
+           0.008225 	for  log10_G_over_aH_drmd
+           0.001660 	for  A_planck
+           0.004646 	for  z_reio
+           0.003193 	for  Omega_Lambda
+           0.017751 	for  YHe
+           0.003851 	for  A_s
+           0.004334 	for  sigma8
+           0.005365 	for  100*theta_s
+           0.014648 	for  H0
+           0.040166 	for  rs_d
+           0.003946 	for  Omega_m
+           0.033367 	for  f_drmd
+           0.016382 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 12636 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3681 points of burn-in, and first 50 percent, keep 15238 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 15351 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 15152 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.023319 	for  omega_b
+           0.040085 	for  omega_cdm
+           0.016066 	for  h
+           0.004000 	for  ln10^{10}A_s
+           0.001496 	for  n_s
+           0.006082 	for  tau_reio
+           0.043194 	for  delta_Neff_drmd
+           0.012376 	for  f_idm_drmd
+           0.006193 	for  log10z_stop
+           0.016807 	for  log10_G_over_aH_drmd
+           0.002851 	for  A_planck
+           0.005424 	for  z_reio
+           0.003283 	for  Omega_Lambda
+           0.021108 	for  YHe
+           0.004885 	for  A_s
+           0.002537 	for  sigma8
+           0.007010 	for  100*theta_s
+           0.016213 	for  H0
+           0.050359 	for  rs_d
+           0.004323 	for  Omega_m
+           0.042078 	for  f_drmd
+           0.022948 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 13096 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3681 points of burn-in, and first 50 percent, keep 15781 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 15838 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 15684 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.025571 	for  omega_b
+           0.036320 	for  omega_cdm
+           0.014340 	for  h
+           0.003643 	for  ln10^{10}A_s
+           0.001106 	for  n_s
+           0.005843 	for  tau_reio
+           0.039546 	for  delta_Neff_drmd
+           0.012737 	for  f_idm_drmd
+           0.007429 	for  log10z_stop
+           0.016603 	for  log10_G_over_aH_drmd
+           0.002050 	for  A_planck
+           0.005390 	for  z_reio
+           0.002019 	for  Omega_Lambda
+           0.023419 	for  YHe
+           0.004421 	for  A_s
+           0.002503 	for  sigma8
+           0.005303 	for  100*theta_s
+           0.014706 	for  H0
+           0.047152 	for  rs_d
+           0.002946 	for  Omega_m
+           0.038408 	for  f_drmd
+           0.028160 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 13596 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3681 points of burn-in, and first 50 percent, keep 16278 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 16311 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 16174 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.019760 	for  omega_b
+           0.036806 	for  omega_cdm
+           0.012731 	for  h
+           0.001985 	for  ln10^{10}A_s
+           0.000666 	for  n_s
+           0.003636 	for  tau_reio
+           0.038128 	for  delta_Neff_drmd
+           0.014433 	for  f_idm_drmd
+           0.004928 	for  log10z_stop
+           0.021343 	for  log10_G_over_aH_drmd
+           0.002386 	for  A_planck
+           0.003172 	for  z_reio
+           0.001513 	for  Omega_Lambda
+           0.017755 	for  YHe
+           0.002376 	for  A_s
+           0.001615 	for  sigma8
+           0.006437 	for  100*theta_s
+           0.012899 	for  H0
+           0.044854 	for  rs_d
+           0.002510 	for  Omega_m
+           0.037069 	for  f_drmd
+           0.021812 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 14081 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3684 points of burn-in, and first 50 percent, keep 16794 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 16868 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 16717 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.018401 	for  omega_b
+           0.027381 	for  omega_cdm
+           0.015174 	for  h
+           0.002941 	for  ln10^{10}A_s
+           0.000667 	for  n_s
+           0.003628 	for  tau_reio
+           0.035055 	for  delta_Neff_drmd
+           0.010291 	for  f_idm_drmd
+           0.006114 	for  log10z_stop
+           0.022355 	for  log10_G_over_aH_drmd
+           0.002471 	for  A_planck
+           0.003248 	for  z_reio
+           0.000383 	for  Omega_Lambda
+           0.016462 	for  YHe
+           0.003449 	for  A_s
+           0.001841 	for  sigma8
+           0.005652 	for  100*theta_s
+           0.015423 	for  H0
+           0.037454 	for  rs_d
+           0.000983 	for  Omega_m
+           0.034063 	for  f_drmd
+           0.021637 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 14596 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3684 points of burn-in, and first 50 percent, keep 17324 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 17376 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 17249 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.014659 	for  omega_b
+           0.031689 	for  omega_cdm
+           0.011445 	for  h
+           0.002387 	for  ln10^{10}A_s
+           0.000697 	for  n_s
+           0.003827 	for  tau_reio
+           0.034111 	for  delta_Neff_drmd
+           0.013521 	for  f_idm_drmd
+           0.005559 	for  log10z_stop
+           0.023989 	for  log10_G_over_aH_drmd
+           0.003304 	for  A_planck
+           0.003255 	for  z_reio
+           0.000640 	for  Omega_Lambda
+           0.012994 	for  YHe
+           0.002719 	for  A_s
+           0.002169 	for  sigma8
+           0.007739 	for  100*theta_s
+           0.011618 	for  H0
+           0.038684 	for  rs_d
+           0.001411 	for  Omega_m
+           0.033176 	for  f_drmd
+           0.020664 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 15081 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3684 points of burn-in, and first 50 percent, keep 17857 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 17888 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 17782 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.011609 	for  omega_b
+           0.029266 	for  omega_cdm
+           0.009152 	for  h
+           0.002202 	for  ln10^{10}A_s
+           0.000875 	for  n_s
+           0.003861 	for  tau_reio
+           0.029728 	for  delta_Neff_drmd
+           0.012718 	for  f_idm_drmd
+           0.005464 	for  log10z_stop
+           0.022464 	for  log10_G_over_aH_drmd
+           0.003614 	for  A_planck
+           0.003468 	for  z_reio
+           0.000694 	for  Omega_Lambda
+           0.010100 	for  YHe
+           0.002353 	for  A_s
+           0.001574 	for  sigma8
+           0.007310 	for  100*theta_s
+           0.009213 	for  H0
+           0.034071 	for  rs_d
+           0.001445 	for  Omega_m
+           0.028795 	for  f_drmd
+           0.014899 	for  z_dec_drmd
+--> Not computing covariance matrix
+--> Scanning file /home/jthybo/connect_wsl/data/DRMD_grendel_iter/number_6/2025-12-16_1000000__1.txt: Removed 3459 points of burn-in, and first 50 percent, keep 15583 steps
+                                                                           2025-12-16_1000000__3.txt: Removed 3684 points of burn-in, and first 50 percent, keep 18472 steps
+                                                                           2025-12-16_1000000__4.txt: Removed 766 points of burn-in, and first 50 percent, keep 18423 steps
+                                                                           2025-12-16_1000000__2.txt: Removed 2999 points of burn-in, and first 50 percent, keep 18314 steps
+--> Computing mean values
+--> Computing variance
+--> Computing convergence criterium (Gelman-Rubin)
+ -> R-1 is 0.006046 	for  omega_b
+           0.016437 	for  omega_cdm
+           0.004575 	for  h
+           0.002712 	for  ln10^{10}A_s
+           0.000929 	for  n_s
+           0.003988 	for  tau_reio
+           0.016077 	for  delta_Neff_drmd
+           0.006436 	for  f_idm_drmd
+           0.006098 	for  log10z_stop
+           0.013392 	for  log10_G_over_aH_drmd
+           0.002456 	for  A_planck
+           0.003475 	for  z_reio
+           0.000676 	for  Omega_Lambda
+           0.005424 	for  YHe
+           0.002803 	for  A_s
+           0.000765 	for  sigma8
+           0.006056 	for  100*theta_s
+           0.004578 	for  H0
+           0.018586 	for  rs_d
+           0.001084 	for  Omega_m
+           0.015698 	for  f_drmd
+           0.009720 	for  z_dec_drmd
+--> Not computing covariance matrix

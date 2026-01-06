@@ -41,10 +41,10 @@ data.parameters['n_s']          = [0.99,   None, None, 0.0074,    1, 'cosmo']
 data.parameters['tau_reio']     = [0.057,   0.04, None,  0.013,    1, 'cosmo']
 
 #DRMD parameters
-data.parameters['delta_Neff_drmd']    = [0.7,   0.0000001, 3,  0.14,    1, 'cosmo']
-data.parameters['log10z_stop']     = [4.7,   2, 5,  0.06,    1, 'cosmo']
-data.parameters['f_idm_drmd']     = [0.03,   0.0000001, 1,  0.02,    1, 'cosmo']
-
+data.parameters['delta_Neff_drmd']      = [0.7,   0.0000001, 3,  0.14,    1, 'cosmo']
+data.parameters['log10z_stop']          = [4.7,   2,         5,  0.06,    1, 'cosmo']
+data.parameters['f_idm_drmd']           = [0.03,  0.0000001, 1,  0.02,    1, 'cosmo']
+data.parameters['log10_G_over_aH_drmd'] = [13.83, 2,         14,  0.1,    1,  'cosmo']
 
 # Nuisance parameter list, same call, except the name does not have to be a class name
 #data.parameters['A_cib_217']         = [    47.2,     0,   200,     6.2593,     1, 'nuisance']
@@ -131,9 +131,9 @@ data.cosmo_arguments['P_k_max_h/Mpc'] = 1.
 
 # These are additional DRMD parameters 
 data.cosmo_arguments['start_large_k_at_tau_h_over_tau_k'] = 0.00002
-data.cosmo_arguments['G_over_aH_drmd_ini'] = 1.e9
+#data.cosmo_arguments['G_over_aH_drmd_ini'] = 1.e9
 
-data.cosmo_arguments['connect_model'] = 'DRMD_iter'
+data.cosmo_arguments['connect_model'] = 'DRMD_grendel_iter'
 #------ Mcmc parameters ----
 
 data.N=200000

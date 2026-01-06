@@ -1,2 +1,10 @@
 # R-1 values for each parameter in every iteration
 # iterations	omega_b	omega_cdm	h	ln10^{10}A_s	n_s	tau_reio	delta_Neff_drmd	f_idm_drmd	log10z_stop	log10_G_over_aH_drmd	Combined
+1-2	chains from iterations 2 and 1 did not have sufficient overlap
+2-3	chains from iterations 3 and 2 did not have sufficient overlap
+3-4	chains from iterations 4 and 3 did not have sufficient overlap
+4-5	chains from iterations 5 and 4 did not have sufficient overlap
+5-6	0.01429	0.72311	0.023038	0.001733	0.315697	0.163416	0.378169	0.058456	1.678114	0.386014	1.678114
+6-7	0.005752	0.025128	0.031349	0.119466	0.323055	0.09658	0.070896	0.030228	0.251098	0.023658	0.323055
+7-8	0.090149	0.076919	0.060665	0.043751	0.077709	0.018142	0.115552	0.005854	0.248986	0.0595	0.248986
+8-9	0.002387	0.015435	0.044153	0.001196	0.029887	0.018664	0.064325	0.009493	0.012286	0.062753	0.064325
