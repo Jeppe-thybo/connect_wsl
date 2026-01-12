@@ -190,6 +190,10 @@ else:
         if type(model).__name__ == 'str':
             break
 
+        print(f'Rank {rank} evaluating parameters = {model}', flush=True)
+        with open(os.path.join(directory, f'model_params_live_{rank}.txt'), 'a') as f:
+            f.write('\t'.join(map(str, model))+'\n')
+
         # Set required CLASS parameters
         params = {}
         if len(param.output_Cl) > 0:

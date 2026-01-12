@@ -13,7 +13,8 @@ parameters={'omega_b'        :  [ 0.014,          0.03           ],
             'tau_reio'       :  [ 0.01,           0.2            ],
             'delta_Neff_drmd':  [ 0,              3              ],
             'f_idm_drmd'     :  [ 0,              1              ],
-            'log10z_stop'    :  [ 2,              5              ]
+            'log10z_stop'    :  [ 2,              5              ],
+            'log10_G_over_aH_drmd':  [  2,        14             ]
 }
 
 
@@ -29,7 +30,7 @@ train_ratio          = 0.95		  # Amount of data used for training
 
 val_ratio            = 0.05	      	  # Amount of training data used for validation
 
-epochs               = 800	      	  # Number of cycles/epochs during training
+epochs               = 200	      	  # Number of cycles/epochs during training
 
 batchsize            = 64	          # Batchsize of data when training
 
@@ -109,7 +110,7 @@ sampling      = 'iterative'    # Sampling of training data can be done with the
                                # are only usable wth the iterative method
 
 
-hypersphere_covmat = '/home/jeppethybo/connect_public/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat'
+hypersphere_covmat = '/home/jeppethybo/connect_public/resources/montepython_public/covmat/DRMD_base_M.covmat'
 
 mcmc_sampler  = 'montepython'  # mcmc sampler to use in iterations (cobaya or montepython)
 

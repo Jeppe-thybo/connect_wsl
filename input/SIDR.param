@@ -4,27 +4,25 @@
 # Specify the parameters for the model, their minimum value and their maximum value
 # (as you would in CLASS) 
 #
-#           | name              | min-value     | max-value      |
-#           |-------------------|---------------|----------------|
-parameters={'omega_b'        :  [ 0.019,          0.025          ],
-            'omega_cdm'      :  [ 0.095,          0.145          ],
-            '100*theta_s'    :  [ 1.03,           1.05           ],
-            'ln10^{10}A_s'   :  [ 2.5,            3.7            ],
-            'n_s'            :  [ 0.885,          1.04           ],
-            'tau_reio'       :  [ 0.01,           0.1            ],
-            'r'              :  [ 0,              0.3            ],
-            #'N_ur'          :  [ 0,              5              ],
-      'm_ncdm_interacting'   :  [ 0.005,           1             ],
-      'log10_G_eff_ur'       :  [ -5.5,           -1             ],
-      'deg_ncdm_interacting' :  [ 2,               5             ]
+#           | name                 | min-value     |    max-value       |
+#           |----------------------|---------------|--------------------|
+parameters={'omega_b'               :  [ 0.019,          0.025          ],
+            'omega_cdm'             :  [ 0.095,          0.145          ],
+            '100*theta_s'           :  [ 1.03,           1.05           ],
+            'ln10^{10}A_s'          :  [ 2.5,            3.7            ],
+            'n_s'                   :  [ 0.885,          1.04           ],
+            'tau_reio'              :  [ 0.01,           0.1            ],
+            'r'                     :  [ 0,              0.3            ],
+            #'N_ur'                 :  [ 0,              5              ],
+      'm_ncdm_interacting'          :  [ 0.005,           1             ],
+      'log10G_eff_ncdm_interacting' :  [ -5.5,           -1             ],
+      'deg_ncdm_interacting'        :  [ 2,               5             ]
 }
 
 
 # Specify additional parameters
 
 class_version = 'classy_nu'
-
-max_time_for_theory = 30
 
 #########--------- Training parameters ---------#########
 
@@ -35,7 +33,7 @@ val_ratio            = 0.05	      	  # Amount of training data used for validati
 
 epochs               = 2000	      	  # Number of cycles/epochs during training
 
-batchsize            = 64	          # Batchsize of data when training
+batchsize            = 4	          # Batchsize of data when training
 
 activation_function  = 'alsing'	          # Activation function - as defined in TensorFlow
                                           # or source/custom_functions.py
@@ -103,7 +101,7 @@ prior_ranges     = parameters            # Prior ranges for mcmc sampling. A dic
                                          # with a logarithmic prior
 
 
-sampling      = 'lhc'    # Sampling of training data can be done with the
+sampling      = 'hypersphere'    # Sampling of training data can be done with the
                                # methods 'lhc' and 'iterative'. Some parameters
                                # are only usable wth the iterative method
 

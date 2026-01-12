@@ -2,6 +2,7 @@ import os
 import subprocess as sp
 import fileinput
 import shutil
+import sys
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import numpy as np
@@ -116,8 +117,6 @@ class Sampling():
             N_acc = mcmc.get_number_of_accepted_steps(i)
             print(f'Number of accepted steps: {N_acc}', flush=True)
             if i == 1 and not self.param.keep_first_iteration:
-                N_keep = 1000
-            else:
                 N_keep = self.param.N_max_points
             N_keep = mcmc.filter_chains(N_keep,i)
             print(f'Keeping only last {N_keep} of the accepted Markovian steps', flush=True)
@@ -191,6 +190,8 @@ class Sampling():
         os.environ["PMIX_MCA_gds"] = "hash"
         sp.check_call(f"mpirun -np {self.N_tasks - 1} python {self.CONNECT_PATH}/source/calc_models_mpi.py {self.param.param_file} {self.CONNECT_PATH} {sampling}".split())
         os.environ["OMP_NUM_THREADS"] = "1"
+
+
 
     def train_neural_network(self, sampling='lhc', output_file=None):
         if sampling in ['lhc','hypersphere','pickle']:
