@@ -33,6 +33,7 @@ data.cosmo_arguments['P_k_max_h/Mpc'] = 1.
 
 # These are additional DRMD parameters
 data.cosmo_arguments['start_large_k_at_tau_h_over_tau_k'] = 0.00002
+data.cosmo_arguments['G_over_aH_drmd_ini'] = 1.e9
 #------ Mcmc parameters ----
 
 data.N=10

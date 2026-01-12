@@ -4,25 +4,25 @@
 # Specify the parameters for the model, their minimum value and their maximum value
 # (as you would in CLASS) 
 #
-#           | name              | min-value     | max-value      |
-#           |-------------------|---------------|----------------|
-parameters={'omega_b'        :  [ 0.019,          0.025          ],
-            'omega_cdm'      :  [ 0.095,          0.145          ],
-            '100*theta_s'    :  [ 1.03,           1.05           ],
-            'ln10^{10}A_s'   :  [ 2.5,            3.7            ],
-            'n_s'            :  [ 0.885,          1.04           ],
-            'tau_reio'       :  [ 0.01,           0.1            ],
-            'r'              :  [ 0,              0.3            ],
-      'm_ncdm_interacting'   :  [ 0.005,           1             ],
-      'log10G_eff_ncdm_interacting'       :  [ -5.5,           -1             ],
-      'deg_ncdm_interacting' :  [ 2,               5             ]
+#           | name                 | min-value     |    max-value       |
+#           |----------------------|---------------|--------------------|
+parameters={'omega_b'               :  [ 0.019,          0.025          ],
+            'omega_cdm'             :  [ 0.095,          0.145          ],
+            '100*theta_s'           :  [ 1.03,           1.05           ],
+            'ln10^{10}A_s'          :  [ 2.5,            3.7            ],
+            'n_s'                   :  [ 0.885,          1.04           ],
+            'tau_reio'              :  [ 0.01,           0.1            ],
+            'r'                     :  [ 0,              0.3            ],
+            #'N_ur'                 :  [ 0,              5              ],
+      'm_ncdm_interacting'          :  [ 0.005,           1             ],
+      'log10G_eff_ncdm_interacting' :  [ -5.5,           -1             ],
+      'deg_ncdm_interacting'        :  [ 2,               5             ]
 }
 
 
 # Specify additional parameters
 
 class_version = 'classy_nu'
-
 
 #########--------- Training parameters ---------#########
 
@@ -33,7 +33,7 @@ val_ratio            = 0.05	      	  # Amount of training data used for validati
 
 epochs               = 2000	      	  # Number of cycles/epochs during training
 
-batchsize            = 124	          # Batchsize of data when training
+batchsize            = 4	          # Batchsize of data when training
 
 activation_function  = 'alsing'	          # Activation function - as defined in TensorFlow
                                           # or source/custom_functions.py
@@ -53,7 +53,7 @@ normalisation_method = 'standardisation'  # Normalisation method for output data
 
 #########--------- Sampling parameters ---------#########
 
-N = 2000       # Amount of points in lhc. When using the iterative 
+N = 1000       # Amount of points in lhc. When using the iterative 
                # method this number refers to only the initial lhc
 
 output_Cl      = ['tt', 'te', 'ee','pp']         # Cl spectra in output
@@ -101,11 +101,11 @@ prior_ranges     = parameters            # Prior ranges for mcmc sampling. A dic
                                          # with a logarithmic prior
 
 
-sampling      = 'iterative'    # Sampling of training data can be done with the
+sampling      = 'hypersphere'    # Sampling of training data can be done with the
                                # methods 'lhc' and 'iterative'. Some parameters
                                # are only usable wth the iterative method
 
-hypersphere_covmat = '/home/jthybo/connect_wsl/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat'
+hypersphere_covmat = '/home/jeppethybo/connect_public/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat'
 
 mcmc_sampler  = 'montepython'  # mcmc sampler to use in iterations (cobaya or montepython)
 
@@ -115,7 +115,7 @@ mcmc_tol      = 0.01           # Tolerance of R-1 values for individual mcmc run
 
 iter_tol      = 0.1            # Tolerance of R-1 values for subsequent iterations
 
-N_max_points  = 2000           # The maximum number of points to take from each iteration
+N_max_points  = 1e+3           # The maximum number of points to take from each iteration
 
 keep_first_iteration = False   # Whether to keep data from first iteration (usually bad)
 
@@ -126,8 +126,8 @@ sampling_likelihoods = ['Planck_highl_TTTEEE_lite', 'Planck_lowl_TT', 'Planck_lo
 
 #########---------- Saving parameters ----------#########
 
-jobname = 'SIDR_model_iter'     # Name job and output folder
+jobname = 'SIDR_model'     # Name job and output folder
 
-save_name = 'SIDR_model_iter'        # Name of trained models
+save_name = 'SIDR_model'        # Name of trained models
 
-overwrite_model = True     # Whether or not to overwrite model names or to append a suffix
+overwrite_model = True      # Whether or not to overwrite model names or to append a suffix

@@ -136,6 +136,6 @@ data.cosmo_arguments['start_large_k_at_tau_h_over_tau_k'] = 0.00002
 data.cosmo_arguments['connect_model'] = 'DRMD_hyper_med_G'
 #------ Mcmc parameters ----
 
-data.N=20000
+data.N=200000
 data.write_step=100
 

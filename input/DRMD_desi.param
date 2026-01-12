@@ -51,7 +51,7 @@ normalisation_method = 'standardisation'  # Normalisation method for output data
 
 #########--------- Sampling parameters ---------#########
 
-N = 100       # Amount of points in lhc. When using the iterative 
+N = 300       # Amount of points in lhc. When using the iterative 
                # method this number refers to only the initial lhc
 
 output_Cl      = ['tt', 'te', 'ee','pp']         # Cl spectra in output
@@ -108,7 +108,7 @@ sampling      = 'hypersphere'    # Sampling of training data can be done with th
                                # methods 'lhc' and 'iterative'. Some parameters
                                # are only usable wth the iterative method
 
-hypersphere_covmat = '/home/jthybo/connect_wsl/resources/montepython_public/covmat/DRMD_base_M.covmat'
+hypersphere_covmat = '/home/jeppethybo/connect_public/resources/montepython_public/covmat/DRMD_base_M.covmat'
 
 mcmc_sampler  = 'montepython'  # mcmc sampler to use in iterations (cobaya or montepython)
 
