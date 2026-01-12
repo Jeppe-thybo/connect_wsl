@@ -130,4 +130,4 @@ jobname = 'SIDR_model_iter'     # Name job and output folder
 
 save_name = 'SIDR_model_iter'        # Name of trained models
 
-overwrite_model = False      # Whether or not to overwrite model names or to append a suffix
+overwrite_model = True     # Whether or not to overwrite model names or to append a suffix
