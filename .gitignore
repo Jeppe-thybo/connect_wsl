@@ -1,6 +1,6 @@
 /data/lhc_samples/*.sample
+/data/
 /resources/
-/jobscripts/*
 /*.out
 *__pycache__/
 mcmc_plugin/connect.conf
