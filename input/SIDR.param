@@ -15,7 +15,11 @@ parameters={'omega_b'               :  [ 0.019,          0.025          ],
             'r'                     :  [ 0,              0.3            ],
             #'N_ur'                 :  [ 0,              5              ],
       'm_ncdm_interacting'          :  [ 0.005,           1             ],
+<<<<<<< HEAD
       'log10G_eff_ncdm_interacting' :  [ -5.5,           -1             ],
+=======
+      'log10G_eff_ncdm_interacting' :  [ -5.5,           -0.1           ],
+>>>>>>> origin/main
       'deg_ncdm_interacting'        :  [ 2,               5             ]
 }
 
@@ -33,7 +37,11 @@ val_ratio            = 0.05	      	  # Amount of training data used for validati
 
 epochs               = 2000	      	  # Number of cycles/epochs during training
 
+<<<<<<< HEAD
 batchsize            = 4	          # Batchsize of data when training
+=======
+batchsize            = 64       	          # Batchsize of data when training
+>>>>>>> origin/main
 
 activation_function  = 'alsing'	          # Activation function - as defined in TensorFlow
                                           # or source/custom_functions.py
