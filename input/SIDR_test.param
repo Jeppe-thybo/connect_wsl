@@ -31,9 +31,9 @@ train_ratio          = 0.95		  # Amount of data used for training
 
 val_ratio            = 0.05	      	  # Amount of training data used for validation
 
-epochs               = 1000	      	  # Number of cycles/epochs during training
+epochs               = 400	      	  # Number of cycles/epochs during training
 
-batchsize            = 128       	          # Batchsize of data when training
+batchsize            = 6	          # Batchsize of data when training
 
 activation_function  = 'alsing'	          # Activation function - as defined in TensorFlow
                                           # or source/custom_functions.py
@@ -53,7 +53,7 @@ normalisation_method = 'standardisation'  # Normalisation method for output data
 
 #########--------- Sampling parameters ---------#########
 
-N = 2000       # Amount of points in lhc. When using the iterative 
+N = 50       # Amount of points in lhc. When using the iterative 
                # method this number refers to only the initial lhc
 
 output_Cl      = ['tt', 'te', 'ee','pp']         # Cl spectra in output
@@ -81,8 +81,11 @@ output_derived = ['z_reio',                 # Derived parameters in output
                   'H0'
 ]
 
-extra_output   = {'rs_drag': 'cosmo.rs_drag(),
-                  'sigma_of_z': '[cosmo.sigma(8./cosmo.h(), z) for z in [0.38, 0.51, 0.61]]'}  # Additional output {name: string of code}
+extra_output = {
+    'rs_drag': 'cosmo.rs_drag()',
+    'sigma_of_z': '[cosmo.sigma(8./cosmo.h(), z) for z in [0.38, 0.51, 0.61]]'
+}
+
 
 
 extra_input    = {'k_pivot': 0.05,	    # Extra input to CLASS
@@ -103,7 +106,7 @@ prior_ranges     = parameters            # Prior ranges for mcmc sampling. A dic
                                          # with a logarithmic prior
 
 
-sampling      = 'iterative'    # Sampling of training data can be done with the
+sampling      = 'hypersphere'    # Sampling of training data can be done with the
                                # methods 'lhc' and 'iterative'. Some parameters
                                # are only usable wth the iterative method
 
@@ -117,7 +120,7 @@ mcmc_tol      = 0.01           # Tolerance of R-1 values for individual mcmc run
 
 iter_tol      = 0.1            # Tolerance of R-1 values for subsequent iterations
 
-N_max_points  = 2000           # The maximum number of points to take from each iteration
+N_max_points  = 1e+3           # The maximum number of points to take from each iteration
 
 keep_first_iteration = False   # Whether to keep data from first iteration (usually bad)
 
@@ -128,8 +131,8 @@ sampling_likelihoods = ['Planck_highl_TTTEEE_lite', 'Planck_lowl_TT', 'Planck_lo
 
 #########---------- Saving parameters ----------#########
 
-jobname = 'SIDR_model_iter'     # Name job and output folder
+jobname = 'SIDR_test'     # Name job and output folder
 
-save_name = 'SIDR_model_iter'        # Name of trained models
+save_name = 'SIDR_test'        # Name of trained models
 
 overwrite_model = True      # Whether or not to overwrite model names or to append a suffix

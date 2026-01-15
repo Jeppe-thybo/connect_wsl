@@ -31,6 +31,7 @@ class Class(real_classy.Class):
             self.model_name = model_name
         self._model_name = model_name
         self.compute_class_background = False
+        self.z_sigma = [0.38,0.51,0.61]
 
             
     @property
@@ -97,6 +98,7 @@ class Class(real_classy.Class):
             self.create_derived_methods()
         if 'extra_output' in self.info:
             self.extra_output = self.info['extra_output']
+            self.z_sigma = [0.38,0.51,0.61]
         self.output_interval = self.info['interval']
         if 'normalize' in self.info:
             raise RuntimeError('Unnormalising the output from models is deprecated. Models now output the correct values instead of normalised values.')
@@ -440,6 +442,76 @@ class Class(real_classy.Class):
     #Added luminosity distance for Pantheon likelihood evaluation
     def luminosity_distance(self, z):
         return (1+z)**2 * self.angular_distance(z)
+    
+    #Added sigma8 and sclae_independent growth factor, f, to use bao_fs_boss_dr12
+    def scale_independent_growth_factor_f(self, z):
+        if 'gr.fac. f' in self.output_bg:
+            if not hasattr(self, 'output_predict'):
+                self.compute()
+
+            if z in self.z_bg:
+                index = (
+                    self.output_interval['bg']['gr.fac. f'][0]
+                    + self.z_bg.index(z)
+                )
+                return self.output_predict[index]
+
+            elif len(self.z_bg) > 2:
+                if 'growth_f' in self.cached_splines:
+                    return float(self.cached_splines['growth_f'](z))
+                else:
+                    out = self.output_predict[
+                        self.output_interval['bg']['gr.fac. f'][0]:
+                        self.output_interval['bg']['gr.fac. f'][1]
+                    ]
+                    spline = CubicSpline(self.z_bg, out, bc_type='natural')
+                    self.cached_splines['growth_f'] = spline
+                    return float(spline(z))
+
+            elif self.compute_class_background:
+                return super(Class, self).scale_independent_growth_factor_f(z)
+
+            else:
+                raise ValueError(
+                    f"The requested redshift {z} was not emulated and there are "
+                    "too few values for interpolation."
+                )
+
+        elif self.compute_class_background:
+            return super(Class, self).scale_independent_growth_factor_f(z)
+
+        else:
+            raise ValueError(
+                "The scale-independent growth factor f has not been emulated."
+            )
+        
+    def sigma(self, scale, z):
+        if 'sigma_of_z' in self.extra_output:
+            if not hasattr(self, 'output_predict'):
+                self.compute()
+
+            if z in self.z_sigma:
+                index = (
+                    self.output_interval['extra']['sigma_of_z'][0]
+                    + self.z_sigma.index(z)
+                )
+                return self.output_predict[index]
+
+            else:
+                raise ValueError(
+                    f"Sigma(z) was requested at z={z}, but this redshift "
+                    "was not emulated."
+                )
+
+        elif self.compute_class_background:
+            return super(Class, self).sigma(scale, z)
+
+        else:
+            raise ValueError(
+                "sigma(z) has not been emulated. Enable CLASS fallback or "
+                "add sigma_of_z to extra_output."
+            )
+
 
 
     def angular_distance(self, z):
