@@ -81,7 +81,7 @@ output_derived = ['z_reio',                 # Derived parameters in output
                   'H0'
 ]
 
-extra_output   = {'rs_drag': 'cosmo.rs_drag(),
+extra_output   = {'rs_drag': 'cosmo.rs_drag()',
                   'sigma_of_z': '[cosmo.sigma(8./cosmo.h(), z) for z in [0.38, 0.51, 0.61]]'}  # Additional output {name: string of code}
 
 
@@ -107,7 +107,7 @@ sampling      = 'iterative'    # Sampling of training data can be done with the
                                # methods 'lhc' and 'iterative'. Some parameters
                                # are only usable wth the iterative method
 
-hypersphere_covmat = '/home/jeppethybo/connect_public/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat'
+hypersphere_covmat = '/home/jthybo/connect_wsl/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat'
 
 mcmc_sampler  = 'montepython'  # mcmc sampler to use in iterations (cobaya or montepython)
 

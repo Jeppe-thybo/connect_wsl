@@ -512,6 +512,18 @@ class Class(real_classy.Class):
                 "add sigma_of_z to extra_output."
             )
 
+    def h(self):
+        if not hasattr(self, 'output_predict'):
+            self.compute()
+
+        if 'H0' in self.output_derived:
+            idx = self.output_interval['derived']['H0']
+            return self.output_predict[idx] / 100.0
+        else:
+            raise ValueError(
+                "H0 is not emulated as a derived parameter. "
+                "Cannot compute h consistently."
+        )
 
 
     def angular_distance(self, z):

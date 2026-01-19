@@ -10,6 +10,7 @@
 #SBATCH --mail-user=jeppethybo@live.dk
 
 echo "========= Job started at `date` =========="
+cd /home/jthybo/connect_wsl/
 
 # activate proper environment if needed
 module load gcc openmpi
