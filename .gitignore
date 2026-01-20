@@ -1,6 +1,8 @@
 /data/lhc_samples/*.sample
 /data/
+/trained_models/
 /resources/
+/jobscripts/*.out
 /data/
 /source/shell_scripts/*
 /*.out
