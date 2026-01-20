@@ -31,7 +31,7 @@ val_ratio            = 0.05	      	  # Amount of training data used for validati
 
 epochs               = 2000	      	  # Number of cycles/epochs during training
 
-batchsize            = 128	          # Batchsize of data when training
+batchsize            = 256	          # Batchsize of data when training
 
 activation_function  = 'alsing'	          # Activation function - as defined in TensorFlow
                                           # or source/custom_functions.py

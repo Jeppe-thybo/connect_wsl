@@ -2,7 +2,7 @@
 #SBATCH --job-name=DRMD_desi_iter_2
 #SBATCH --partition=qany
 #SBATCH --mem-per-cpu=2g
-#SBATCH --nodes=1
+#SBATCH --nodes=2
 #SBATCH --ntasks=36
 #SBATCH --cpus-per-task=1
 #SBATCH --time=48:00:00
