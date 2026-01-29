@@ -13,7 +13,6 @@ parameters={'omega_b'               :  [ 0.019,          0.025          ],
             'n_s'                   :  [ 0.885,          1.04           ],
             'tau_reio'              :  [ 0.01,           0.1            ],
             'r'                     :  [ 0,              0.3            ],
-            #'N_ur'                 :  [ 0,              5              ],
       'm_ncdm_interacting'          :  [ 0.005,           1             ],
       'log10G_eff_ncdm_interacting' :  [ -5.5,           -0.1           ],
       'deg_ncdm_interacting'        :  [ 2,               5             ]
@@ -33,7 +32,7 @@ val_ratio            = 0.05	      	  # Amount of training data used for validati
 
 epochs               = 1000	      	  # Number of cycles/epochs during training
 
-batchsize            = 6	          # Batchsize of data when training
+batchsize            = 64	          # Batchsize of data when training
 
 activation_function  = 'alsing'	          # Activation function - as defined in TensorFlow
                                           # or source/custom_functions.py
@@ -49,11 +48,9 @@ N_nodes	             = 512	          # Number of nodes in each hidden layer
 normalisation_method = 'standardisation'  # Normalisation method for output data
 
 
-
-
 #########--------- Sampling parameters ---------#########
 
-N = 100       # Amount of points in lhc. When using the iterative 
+N = 1000       # Amount of points in lhc. When using the iterative 
                # method this number refers to only the initial lhc
 
 output_Cl      = ['tt', 'te', 'ee','pp']         # Cl spectra in output
@@ -78,7 +75,7 @@ output_derived = ['z_reio',                 # Derived parameters in output
 		  'YHe', 
 		  'A_s', 
 		  'sigma8',
-          'H0'
+                  'H0'
 ]
 
 extra_output = {
@@ -106,7 +103,7 @@ prior_ranges     = parameters            # Prior ranges for mcmc sampling. A dic
                                          # with a logarithmic prior
 
 
-sampling      = 'hypersphere'    # Sampling of training data can be done with the
+sampling      = 'iterative'    # Sampling of training data can be done with the
                                # methods 'lhc' and 'iterative'. Some parameters
                                # are only usable wth the iterative method
 
@@ -120,7 +117,7 @@ mcmc_tol      = 0.01           # Tolerance of R-1 values for individual mcmc run
 
 iter_tol      = 0.1            # Tolerance of R-1 values for subsequent iterations
 
-N_max_points  = 1e+3           # The maximum number of points to take from each iteration
+N_max_points  = 1000           # The maximum number of points to take from each iteration
 
 keep_first_iteration = False   # Whether to keep data from first iteration (usually bad)
 

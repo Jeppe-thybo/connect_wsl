@@ -14,7 +14,7 @@ data.experiments=['Planck_highl_TTTEEE_lite','Planck_lowl_EE','Planck_lowl_TT','
 # Planck as the first set of experiments should be a safe bet, except if you
 # also have LSS experiments).
 # If you have experiments without nuisance, you do not need to specify an
-# additional entry in the over_sampling list (notice for instance that, out of
+# additional entry in the over_sampling list notice for instance that, out of
 # the three Planck likelihoods used, only Planck_highl requires nuisance
 # parameters, therefore over_sampling has a length of two (cosmology, plus one
 # set of nuisance).
@@ -50,18 +50,18 @@ data.parameters['log10_G_over_aH_drmd'] = [13.057,   2,        14,  0.01,     1,
 # Nuisance parameter list, same call, except the name does not have to be a class name
 data.parameters['A_planck']          = [ 1.00061,   0.9,   1.1,     0.0025,     1, 'nuisance']
 
-data.parameters['M']          = [-19.1,   None, None,  0.004,  1,'nuisance']
+data.parameters['M']                 = [-19.1,   None, None,  0.004,  1,'nuisance']
 
 # Standard derived parameters
-data.parameters['H0']              = [0, None, None, 0,     1,   'derived']
-data.parameters['Omega_m']              = [0, None, None, 0,     1,   'derived']
-data.parameters['sigma8']          = [0, None, None, 0,     1,   'derived']
-data.parameters['rs_d']          = [0, None, None, 0,     1,   'derived']
-data.parameters['YHe']          = [0, None, None, 0,     1,   'derived']
+data.parameters['H0']                = [0, None, None, 0,     1,   'derived']
+data.parameters['Omega_m']           = [0, None, None, 0,     1,   'derived']
+data.parameters['sigma8']            = [0, None, None, 0,     1,   'derived']
+data.parameters['rs_d']              = [0, None, None, 0,     1,   'derived']
+data.parameters['YHe']               = [0, None, None, 0,     1,   'derived']
 
 #DRMD derived parameters:
-data.parameters['f_drmd']          = [0, None, None, 0,     1,   'derived']
-data.parameters['z_dec_drmd']          = [0, None, None, 0,     1,   'derived']
+data.parameters['f_drmd']            = [0, None, None, 0,     1,   'derived']
+data.parameters['z_dec_drmd']        = [0, None, None, 0,     1,   'derived']
 
 # Other cosmo parameters (fixed parameters, precision parameters, etc.)
 
@@ -89,6 +89,6 @@ data.cosmo_arguments['start_large_k_at_tau_h_over_tau_k'] = 0.00002
 data.cosmo_arguments['connect_model'] = 'DRMD_desi_iter_2'
 #------ Mcmc parameters ----
 
-data.N=20000
-data.write_step=5
+data.N=200000
+data.write_step=10
 

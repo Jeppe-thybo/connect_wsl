@@ -2,7 +2,8 @@
 #SBATCH --job-name=SIDR_test
 #SBATCH --partition=qany
 #SBATCH --mem-per-cpu=2g
-#SBATCH --ntasks=8
+#SBATCH --ntasks=32
+#SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
 #SBATCH --time=48:00:00
 #SBATCH --output=SIDR_test.out
@@ -26,6 +27,6 @@ source $path
 
 # Run the CONNECT creation step
 python connect.py create input/SIDR_test.param
-python connect.py train input/SIDR_test.param
+
 echo "========= Job finished at `date` =========="
 

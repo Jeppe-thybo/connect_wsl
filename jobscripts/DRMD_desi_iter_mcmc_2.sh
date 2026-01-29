@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=DRMD_desi_iter_mcmc_2
-#SBATCH --partition=qany
+#SBATCH --partition=q20
 #SBATCH --mem-per-cpu=2g
 #SBATCH --ntasks=4
 #SBATCH --cpus-per-task=1
