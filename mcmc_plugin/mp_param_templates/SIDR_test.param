@@ -1,66 +1,71 @@
+#===========================
+# SIDR + BK15 + standard likelihoods
+#===========================
+
 #------Experiments to test (separated with commas)-----
-data.experiments=['Planck_highl_TTTEEE_lite','Planck_lowl_EE','Planck_lowl_TT','bao_fs_boss_dr12','bao_smallz_2014','Planck_lensing','Pantheon']
+data.experiments = ['Planck_highl_TTTEEE_lite','Planck_lowl_EE','Planck_lowl_TT','BK15','bao_fs_boss_dr12','bao_smallz_2014','Planck_lensing','Pantheon']
 
-data.over_sampling=[1,1,1,1,1,1]
+data.over_sampling = [1,1,1,1,1,1,1]
 
-#------ Parameter list -------
+#------Parameter list-------
 
-# data.parameters[class name] = [mean, min, max, 1-sigma, scale, role]
-# - if min max irrelevant, put to None
-# - if fixed, put 1-sigma to 0
-# - if scale irrelevant, put to 1, otherwise to the appropriate factor
-# - role is either 'cosmo', 'nuisance' or 'derived'. You should put the derived
-# parameters at the end, and in case you are using the `-j fast` Cholesky
-# decomposition, you should order your nuisance parameters from slowest to
-# fastest.
+# Cosmological parameters
+data.parameters['omega_b']      = [ 0.0228, None, None,  0.00028, 1, 'cosmo']
+data.parameters['omega_cdm']    = [ 0.133,  None, None, 0.0027,  1, 'cosmo']
+data.parameters['100*theta_s']  = [ 1.04,   None, None, 0.006,   1, 'cosmo']
+data.parameters['ln10^{10}A_s'] = [ 3.077,  None, None, 0.0029,  1, 'cosmo']
+data.parameters['n_s']          = [ 0.99,   None, None, 0.0074,  1, 'cosmo']
+data.parameters['tau_reio']     = [ 0.057,  0.04, None, 0.013,   1, 'cosmo']
 
-# Cosmological parameters list
+# SIDR parameters
+data.parameters['r']                            = [0.15, 1e-7, 0.3, 0.14, 1, 'cosmo']
+data.parameters['m_ncdm_interacting']           = [0.1, 0.005, 1, 0.15, 1, 'cosmo']
+data.parameters['log10G_eff_ncdm_interacting']  = [-2, -5, -0.1, 0.15, 1, 'cosmo']
+data.parameters['deg_ncdm_interacting']         = [3, 2, 5, 0.2, 1, 'cosmo']
 
-data.parameters['omega_b']      = [ 2.28,   None, None,  0.028, 0.01, 'cosmo']
-data.parameters['omega_cdm']    = [0.133,   None, None, 0.0027,    1, 'cosmo']
-data.parameters['100*theta_s']  = [1.04,   None, None,   .006,    1, 'cosmo']
-data.parameters['ln10^{10}A_s'] = [ 3.077,   None, None, 0.0029,    1, 'cosmo']
-data.parameters['n_s']          = [0.99,   None, None, 0.0074,    1, 'cosmo']
-data.parameters['tau_reio']     = [0.057,   0.04, None,  0.013,    1, 'cosmo']
+# Planck / Pantheon nuisance parameters
+data.parameters['A_planck'] = [1.00061, 0.9, 1.1, 0.0025, 1, 'nuisance']
+data.parameters['M']        = [-19.1, None, None, 0.004, 1, 'nuisance']
 
-#SIDR parameters
-data.parameters['r']                            = [0.15,    0.0000001,   0.3,  0.14,    1, 'cosmo']
-data.parameters['m_ncdm_interacting']           = [0.1,     0.005,         1,  0.15,    1, 'cosmo']
-data.parameters['log10G_eff_ncdm_interacting']  = [-2,     -5,          -0.1,  0.15,    1, 'cosmo']
-data.parameters['deg_ncdm_interacting']         = [3,       2,             5,  0.2,     1, 'cosmo']
+# BK15 nuisance parameters
+data.parameters['BBdust']          = [1.0, 0.0, 3.0, 0.3, 1, 'nuisance']
+data.parameters['BBsync']          = [1.0, 0.0, 3.0, 0.3, 1, 'nuisance']
+data.parameters['BBalphadust']     = [0.6, -1.0, 2.0, 0.3, 1, 'nuisance']
+data.parameters['BBbetadust']      = [1.59, 0.0, 3.0, 0.11, 1, 'nuisance']       # Prior applied via BK15priors
+data.parameters['BBalphasync']     = [-0.6, -2.0, 2.0, 0.5, 1, 'nuisance']
+data.parameters['BBbetasync']      = [-3.1, -5.0, -1.0, 0.3, 1, 'nuisance']      # Prior applied via BK15priors
+data.parameters['BBdustsynccorr']  = [0.0, -1.0, 1.0, 0.5, 1, 'nuisance']
+data.parameters['BBTdust']         = [19.6, 0.0, 50.0, 5.0, 1, 'nuisance']
+data.parameters['Delta_dust']      = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
+data.parameters['Delta_sync']      = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
+data.parameters['gamma_corr']      = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
+data.parameters['gamma_95']        = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
+data.parameters['gamma_150']       = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
+data.parameters['gamma_220']       = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
+data.parameters['EEtoBB_dust']     = [0.5, 0.0, 1.0, 0.2, 1, 'nuisance']
+data.parameters['EEtoBB_sync']     = [0.5, 0.0, 1.0, 0.2, 1, 'nuisance']
 
+# Derived parameters
+data.parameters['H0']           = [0, None, None, 0, 1, 'derived']
+data.parameters['sigma8']       = [0, None, None, 0, 1, 'derived']
+data.parameters['Omega_Lambda'] = [0, None, None, 0, 1, 'derived']
+data.parameters['YHe']          = [0, None, None, 0, 1, 'derived']
+data.parameters['A_s']          = [0, None, None, 0, 1, 'derived']
+data.parameters['z_reio']       = [0, None, None, 0, 1, 'derived']
 
-# Nuisance parameter list, same call, except the name does not have to be a class name
-
-data.parameters['A_planck']          = [ 1.00061,   0.9,   1.1,     0.0025,     1, 'nuisance']
-
-data.parameters['M']          = [-19.1,   None, None,  0.004,  1,'nuisance']
-
-
-# Standard derived parameters
-data.parameters['H0']              = [0, None, None, 0,     1,   'derived']
-data.parameters['sigma8']          = [0, None, None, 0,     1,   'derived']
-data.parameters['Omega_Lambda']    = [0, None, None, 0,     1,   'derived']
-data.parameters['YHe']             = [0, None, None, 0,     1,   'derived']
-data.parameters['A_s']             = [0, None, None, 0,     1,   'derived']
-data.parameters['z_reio']             = [0, None, None, 0,     1,   'derived']
-
-# Other cosmo parameters (fixed parameters, precision parameters, etc.)
-
+# Other cosmo parameters
 data.cosmo_arguments['k_pivot'] = 0.05
 data.cosmo_arguments['N_ncdm_interacting'] = 1
 data.cosmo_arguments['ncdm_fluid_approximation'] = 3
 data.cosmo_arguments['modes'] = 's,t'
 data.cosmo_arguments['N_ur'] = 0
- 
-
 data.cosmo_arguments['output'] = 'mPk'
 data.cosmo_arguments['P_k_max_h/Mpc'] = 1.
-
-
 data.cosmo_arguments['connect_model'] = 'SIDR_test'
-#------ Mcmc parameters ----
 
-data.N=20000
-data.write_step=1
+# MCMC settings
+data.N = 20000
+data.write_step = 1
 
+# Likelihoods
+likelihoods = ['BK15', 'BK15priors']  # BK15priors enforces Gaussian priors on BBbetadust and BBbetasync
