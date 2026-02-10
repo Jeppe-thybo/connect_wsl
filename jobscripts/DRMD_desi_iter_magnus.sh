@@ -1,14 +1,17 @@
 #!/bin/bash
-#SBATCH --job-name=SIDR_iter
+#SBATCH --job-name=DRMD_desi_iter_magnus
 #SBATCH --partition=qany
 #SBATCH --mem-per-cpu=2g
 #SBATCH --ntasks=36
+#SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
 #SBATCH --time=48:00:00
-#SBATCH --output=SIDR_model_iter.out
+#SBATCH --output=DRMD_desi_iter_magnus.out
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jeppethybo@live.dk
+
 echo "========= Job started at `date` =========="
+cd /home/jthybo/connect_wsl/
 
 # activate proper environment if needed
 module load gcc openmpi
@@ -19,6 +22,6 @@ path_split=(${clik_line//= / })
 path="$(echo ${path_split[1]} | sed "s/'//g")bin/clik_profile.sh"
 source $path
 
-python connect.py create input/SIDR.param
+python connect.py create input/DRMD_desi_iter_magnus.param
 
 echo "========= Job finished at `date` =========="

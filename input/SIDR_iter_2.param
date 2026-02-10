@@ -13,7 +13,6 @@ parameters={'omega_b'               :  [ 0.019,          0.025          ],
             'n_s'                   :  [ 0.885,          1.04           ],
             'tau_reio'              :  [ 0.01,           0.1            ],
             'r'                     :  [ 0,              0.3            ],
-            #'N_ur'                 :  [ 0,              5              ],
       'm_ncdm_interacting'          :  [ 0.005,           1             ],
       'log10G_eff_ncdm_interacting' :  [ -5.5,           -0.1           ],
       'deg_ncdm_interacting'        :  [ 2,               5             ]
@@ -78,7 +77,7 @@ output_derived = ['z_reio',                 # Derived parameters in output
 		  'YHe', 
 		  'A_s', 
 		  'sigma8',
-                  'H0'
+              'H0'
 ]
 
 extra_output   = {'rs_drag': 'cosmo.rs_drag()',
@@ -89,7 +88,8 @@ extra_input    = {'k_pivot': 0.05,	    # Extra input to CLASS
                   'N_ncdm_interacting' : 1,
                   'ncdm_fluid_approximation': 3,
                   'modes': 's,t',
-                  'N_ur': 0
+                  'N_ur': 0,
+                  'P_k_max_h/Mpc': 1.0
 }
 
 #bestfit_guesses = {'parameter': value}  # Guesses for bestfit for parameters
@@ -113,7 +113,7 @@ mcmc_sampler  = 'montepython'  # mcmc sampler to use in iterations (cobaya or mo
 
 initial_model = None           # Name of initial model to start the iterations
 
-mcmc_tol      = 0.01           # Tolerance of R-1 values for individual mcmc runs
+mcmc_tol      = 0.02           # Tolerance of R-1 values for individual mcmc runs
 
 iter_tol      = 0.1            # Tolerance of R-1 values for subsequent iterations
 
@@ -128,8 +128,8 @@ sampling_likelihoods = ['Planck_highl_TTTEEE_lite', 'Planck_lowl_TT', 'Planck_lo
 
 #########---------- Saving parameters ----------#########
 
-jobname = 'SIDR_model_iter'     # Name job and output folder
+jobname = 'SIDR_iter_2'     # Name job and output folder
 
-save_name = 'SIDR_model_iter'        # Name of trained models
+save_name = 'SIDR_iter_2'        # Name of trained models
 
 overwrite_model = True      # Whether or not to overwrite model names or to append a suffix

@@ -1,5 +1,5 @@
 #------Experiments to test (separated with commas)-----
-data.experiments=['Planck_highl_TTTEEE_lite','Planck_lowl_EE','Planck_lowl_TT','BK15','bao_fs_boss_dr12','bao_smallz_2014','Planck_lensing','Pantheon']
+data.experiments=['Planck_highl_TTTEEE_lite','Planck_lowl_EE','Planck_lowl_TT','BK18lf_dust','bao_fs_boss_dr12','bao_smallz_2014','Planck_lensing','Pantheon']
 
 data.over_sampling=[1,1,1,1,1,1,1]
 
@@ -36,22 +36,22 @@ data.parameters['A_planck']          = [ 1.00061,   0.9,   1.1,     0.0025,     
 
 data.parameters['M']                 = [-19.1,   None, None,  0.004,  1,'nuisance']
 
-data.parameters['BBdust']          = [1.0, 0.0, 3.0, 0.3, 1, 'nuisance']
-data.parameters['BBsync']          = [1.0, 0.0, 3.0, 0.3, 1, 'nuisance']
-data.parameters['BBalphadust']     = [0.6, -1.0, 2.0, 0.3, 1, 'nuisance']
-data.parameters['BBbetadust']      = [1.59, 0.0, 3.0, 0.11, 1, 'nuisance']       # Prior applied via BK15priors
-data.parameters['BBalphasync']     = [-0.6, -2.0, 2.0, 0.5, 1, 'nuisance']
-data.parameters['BBbetasync']      = [-3.1, -5.0, -1.0, 0.3, 1, 'nuisance']      # Prior applied via BK15priors
-data.parameters['BBdustsynccorr']  = [0.0, -1.0, 1.0, 0.5, 1, 'nuisance']
-data.parameters['BBTdust']         = [19.6, 0.0, 50.0, 5.0, 1, 'nuisance']
-data.parameters['Delta_dust']      = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
-data.parameters['Delta_sync']      = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
-data.parameters['gamma_corr']      = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
-data.parameters['gamma_95']        = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
-data.parameters['gamma_150']       = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
-data.parameters['gamma_220']       = [0.0, -1.0, 1.0, 0.2, 1, 'nuisance']
-data.parameters['EEtoBB_dust']     = [0.5, 0.0, 1.0, 0.2, 1, 'nuisance']
-data.parameters['EEtoBB_sync']     = [0.5, 0.0, 1.0, 0.2, 1, 'nuisance']
+data.parameters['BBdust']          = [3.0, 0.0, 15.0, 0.1, 1.0, 'nuisance']
+data.parameters['BBsync']          = [1.0, 0.0, 50.0, 1.0, 1.0, 'nuisance']
+data.parameters['BBalphadust']     = [-0.42,-1.0, 0.0, 0.01, 1.0, 'nuisance']
+data.parameters['BBbetadust']      = [1.59, 0.8, 2.40, 0.02, 1.0, 'nuisance']       
+data.parameters['BBalphasync']     = [-0.6, -1.0, 0.0, 0.01, 1.0, 'nuisance']
+data.parameters['BBbetasync']      = [-3.1, -4.5, -2.0, 0.02, 1.0, 'nuisance']     
+data.parameters['BBdustsynccorr']  = [0.2, -1.0, 1.0, 0.01, 1, 'nuisance']
+data.parameters['BBTdust']         = [19.6, 19.6, 19.6, 0.0, 1.0, 'nuisance']
+data.parameters['Delta_dust']      = [1.0, 1.0, 1.0, 0.0, 1.0, 'nuisance']
+data.parameters['Delta_sync']      = [1.0, 1.0, 1.0, 0.0, 1.0, 'nuisance']
+data.parameters['gamma_corr']      = [0.0, 0.0, 0.0, 0.0, 1.0, 'nuisance']
+data.parameters['gamma_95']        = [0.0, 0.0, 0.0, 0.0, 1.0, 'nuisance']
+data.parameters['gamma_150']       = [0.0, 0.0, 0.0, 0.0, 1.0, 'nuisance']
+data.parameters['gamma_220']       = [0.0, 0.0, 0.0, 0.0, 1.0, 'nuisance']
+data.parameters['EEtoBB_dust']     = [2.0, 2.0, 2.0, 0.0, 1.0, 'nuisance']
+data.parameters['EEtoBB_sync']     = [2.0, 2.0, 2.0, 0.0, 1.0, 'nuisance']
 
 
 # Standard derived parameters
@@ -75,9 +75,9 @@ data.cosmo_arguments['output'] = 'mPk'
 data.cosmo_arguments['P_k_max_h/Mpc'] = 1.
 
 
-data.cosmo_arguments['connect_model'] = 'SIDR_model_iter'
+data.cosmo_arguments['connect_model'] = 'SIDR_iter_2'
 #------ Mcmc parameters ----
 
-data.N=100000
+data.N=200000
 data.write_step=10
 

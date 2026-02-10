@@ -13,10 +13,11 @@ parameters={'omega_b'               :  [ 0.019,          0.025          ],
             'n_s'                   :  [ 0.885,          1.04           ],
             'tau_reio'              :  [ 0.01,           0.1            ],
             'r'                     :  [ 0,              0.3            ],
-            #'N_ur'                 :  [ 0,              5              ],
       'm_ncdm_interacting'          :  [ 0.005,           1             ],
       'log10G_eff_ncdm_interacting' :  [ -5.5,           -0.1           ],
-      'deg_ncdm_interacting'        :  [ 2,               5             ]
+      'deg_ncdm_interacting'        :  [ 1,               5             ],
+      'm_ncdm_standard'            :  [ 0.005,           1             ],
+      'deg_ncdm_standard'          :  [ 1,               5             ]
 }
 
 
@@ -53,7 +54,7 @@ normalisation_method = 'standardisation'  # Normalisation method for output data
 
 #########--------- Sampling parameters ---------#########
 
-N = 2000       # Amount of points in lhc. When using the iterative 
+N = 1000       # Amount of points in lhc. When using the iterative 
                # method this number refers to only the initial lhc
 
 output_Cl      = ['tt', 'te', 'ee','pp']         # Cl spectra in output
@@ -78,7 +79,7 @@ output_derived = ['z_reio',                 # Derived parameters in output
 		  'YHe', 
 		  'A_s', 
 		  'sigma8',
-                  'H0'
+              'H0'
 ]
 
 extra_output   = {'rs_drag': 'cosmo.rs_drag()',
@@ -86,10 +87,12 @@ extra_output   = {'rs_drag': 'cosmo.rs_drag()',
 
 
 extra_input    = {'k_pivot': 0.05,	    # Extra input to CLASS
-                  'N_ncdm_interacting' : 1,
-                  'ncdm_fluid_approximation': 3,
+                  'N_ncdm_interacting' : 1.0,
+                  'ncdm_fluid_approximation': 3.0,
                   'modes': 's,t',
-                  'N_ur': 0
+                  'N_ur': 0,
+                  'P_k_max_h/Mpc': 1.0,
+                  'N_ncdm_standard': 1.0
 }
 
 #bestfit_guesses = {'parameter': value}  # Guesses for bestfit for parameters
@@ -111,15 +114,13 @@ hypersphere_covmat = '/home/jthybo/connect_wsl/resources/montepython_public/covm
 
 mcmc_sampler  = 'montepython'  # mcmc sampler to use in iterations (cobaya or montepython)
 
-temperature = 10.0
-
 initial_model = None           # Name of initial model to start the iterations
 
 mcmc_tol      = 0.01           # Tolerance of R-1 values for individual mcmc runs
 
 iter_tol      = 0.1            # Tolerance of R-1 values for subsequent iterations
 
-N_max_points  = 2000           # The maximum number of points to take from each iteration
+N_max_points  = 1000           # The maximum number of points to take from each iteration
 
 keep_first_iteration = False   # Whether to keep data from first iteration (usually bad)
 
@@ -130,8 +131,8 @@ sampling_likelihoods = ['Planck_highl_TTTEEE_lite', 'Planck_lowl_TT', 'Planck_lo
 
 #########---------- Saving parameters ----------#########
 
-jobname = 'SIDR_T_10_iter'     # Name job and output folder
+jobname = 'SIDR_interacting_and_std'     # Name job and output folder
 
-save_name = 'SIDR_T_10_iter'        # Name of trained models
+save_name = 'SIDR_interacting_and_std'        # Name of trained models
 
 overwrite_model = True      # Whether or not to overwrite model names or to append a suffix

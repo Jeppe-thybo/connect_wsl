@@ -33,6 +33,10 @@ class montepython(MCMC_base_class):
         output_dir = f'{self.CONNECT_PATH}/data/{self.param.jobname}/number_{iteration}'
 
         sp.run(f"{self.CONNECT_PATH}/source/mcmc_samplers/run_scripts/run_montepython_iteration.sh {output_dir} {MP_param_file} {os.path.join(self.CONNECT_PATH,'mcmc_plugin/connect.conf')} {self.param.temperature} {self.param.mcmc_tol} {self.mcmc_node}", shell=True, cwd=self.montepython_path)
+        
+
+        #Save full chain from each iteration
+        #self.backup_full_chains(iteration)
 
     
     def get_number_of_accepted_steps(self, iteration):
@@ -247,7 +251,7 @@ class montepython(MCMC_base_class):
 
     def backup_full_chains(self, iteration):
         files = sorted([f for f in os.listdir(f'data/{self.param.jobname}/number_{iteration}') if f.endswith('.txt')])
-        os.mkdir(f'data/{self.param.jobname}/number_{iteration}/full_chains')
+        os.makedirs(f'data/{self.param.jobname}/number_{iteration}/full_chains', exist_ok=True)
         for filename in files:
             os.system(f"cp data/{self.param.jobname}/number_{iteration}/{filename} data/{self.param.jobname}/number_{iteration}/full_chains/{filename}")
 

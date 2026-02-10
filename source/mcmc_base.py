@@ -145,7 +145,7 @@ class MCMC_base_class():
             elif av_dist2 + 0*std_dist2 < av_dist1 - 2*std_dist1:
                 indices_accepted.append(i)
 
-        self.backup_full_chains(iteration)
+        #self.backup_full_chains(iteration)
 
         self.save_accepted_points(indices_accepted, iteration)
 

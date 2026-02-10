@@ -91,6 +91,9 @@ extra_input    = {'k_pivot': 0.05,	    # Extra input to CLASS
 		  'N_ncdm':  1,
 		  'm_ncdm':  0.06,
 		  'T_ncdm':  0.71611,
+          'p_k_max_h/Mpc': 1.0,
+          'start_large_k_at_tau_over_tau_k': 0.00002,
+          'lensing': 'yes'
 		  }
 
 #bestfit_guesses = {'parameter': value}  # Guesses for bestfit for parameters

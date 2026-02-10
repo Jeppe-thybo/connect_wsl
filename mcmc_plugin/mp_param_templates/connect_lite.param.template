@@ -15,7 +15,6 @@ data.parameters['A_planck']          = [ 1.00061,   0.9,   1.1,     0.0025,     
 # Connect model name used by plugin
 data.cosmo_arguments['connect_model'] = 'model_name'
 
-
 data.cosmo_arguments['k_pivot'] = 0.05
 # The base model features two massless
 # and one massive neutrino with m=0.06eV.

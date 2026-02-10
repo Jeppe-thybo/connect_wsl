@@ -190,6 +190,16 @@ else:
         if type(model).__name__ == 'str':
             break
 
+        #saving model params before CLASS computations for inspection in case of CLASS failure
+         # Log model parameters immediately (before CLASS)
+        #with open(in_dir, 'a') as f:
+            #for i, m in enumerate(model):
+                #if i != len(model)-1:
+                    #f.write(str(m)+'\t')
+                #else:
+                   #f.write(str(m)+'\n')
+            #f.flush()
+
         # Set required CLASS parameters
         params = {}
         if len(param.output_Cl) > 0:
