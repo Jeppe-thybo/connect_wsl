@@ -1,0 +1,150 @@
+Parameter autocorrelation lengths (effective number of samples N_eff = tot weight/weight length)
+
+                              Weight Length   Sample length           N_eff
+omega_b                                8.48            2.41          141500
+omega_cdm                              8.38            2.38          143218
+100theta_s                          8505.51         2414.96             141
+ln10^{10}A_s                        1612.30          457.78             744
+n_s                                    8.58            2.44          139830
+tau_reio                             918.73          260.85            1306
+r                                    241.44           68.55            4970
+m_ncdm_interacting                   324.96           92.27            3692
+log10G_eff_ncdm_interacting            8.32            2.36          144288
+deg_ncdm_interacting                   8.38            2.38          143118
+A_planck                             651.83          185.07            1840
+M                                      8.31            2.36          144373
+BBdust                              2384.23          676.95             503
+BBsync                               124.95           35.48            9604
+BBalphadust                         1819.55          516.62             659
+BBbetadust                           390.14          110.77            3075
+BBalphasync                         2245.07          637.44             534
+BBbetasync                          1912.77          543.09             627
+BBdustsynccorr                      2178.03          618.40             550
+H0                                     8.29            2.35          144683
+sigma8                              3994.15         1134.05             300
+Omega_Lambda                        1911.53          542.74             627
+YHe                                    8.44            2.40          142176
+A_s                                 1783.79          506.47             672
+z_reio                               926.00          262.92            1295
+
+
+mean convergence stats using remaining chains
+param sqrt(var(chain mean)/mean(chain var))
+
+omega_b                         0.1521  10^{-2}\omega{}_{b }
+omega_cdm                       0.1891  \omega{}_{cdm }
+100theta_s                      0.2534  100\theta{}_{s }
+ln10^{10}A_s                    0.1482  ln10^{10}A_{s }
+n_s                             0.2451  n_{s }
+tau_reio                        0.1076  \tau{}_{reio }
+r                               0.0642  r
+m_ncdm_interacting              0.0532  m_{ncdm interacting }
+log10G_eff_ncdm_interacting     0.3446  log10G_{eff ncdm interacting }
+deg_ncdm_interacting            0.1785  deg_{ncdm interacting }
+A_planck                        0.0848  A_{planck }
+M                               0.1586  M
+BBdust                          0.1554  BBdust
+BBsync                          0.0494  BBsync
+BBalphadust                     0.1700  BBalphadust
+BBbetadust                      0.0590  BBbetadust
+BBalphasync                     0.1644  BBalphasync
+BBbetasync                      0.0903  BBbetasync
+BBdustsynccorr                  0.1096  BBdustsynccorr
+H0                              0.1546  H0
+sigma8                          0.1291  sigma8
+Omega_Lambda                    0.0874  \Omega{}_{Lambda }
+YHe                             0.1795  YHe
+A_s                             0.1477  A_{s }
+z_reio                          0.0991  z_{reio }
+
+var(mean)/mean(var) for eigenvalues of covariance of y of orthonormalized parameters
+  1     -0.00000
+  2     -0.00000
+  3     -0.00000
+  4     -0.00000
+  5     -0.00000
+  6     -0.00000
+  7     -0.00000
+  8     -0.00000
+  9     -0.00000
+ 10      0.00000
+ 11      0.00000
+ 12      0.00000
+ 13      0.00000
+ 14      0.00000
+ 15      0.00000
+ 16      0.00000
+ 17      0.00000
+ 18      0.00000
+ 19      0.00000
+ 20      0.00000
+ 21      0.01274
+ 22      0.02615
+ 23      0.05472
+ 24      0.07727
+ 25      0.28444
+
+Split tests: rms_n([delta(upper/lower quantile)]/sd) n={2,3,4}, limit=95%:
+i.e. mean sample splitting change in the quantiles in units of the st. dev.
+
+omega_b                        0.0772   0.1671   0.1413 upper
+omega_b                        0.0771   0.0600   0.1241 lower
+omega_cdm                      0.0783   0.0898   0.1952 upper
+omega_cdm                      0.0230   0.0309   0.1052 lower
+100theta_s                     0.1003   0.1114   0.1995 upper
+100theta_s                     0.1224   0.1734   0.2766 lower
+ln10^{10}A_s                   0.1900   0.2819   0.2619 upper
+ln10^{10}A_s                   0.0424   0.0566   0.1231 lower
+n_s                            0.0916   0.2305   0.2869 upper
+n_s                            0.0803   0.0912   0.2200 lower
+tau_reio                       0.3327   0.4131   0.3796 upper
+tau_reio                       0.0155   0.0212   0.0177 lower
+r                              0.0646   0.0648   0.1024 upper
+r                              0.0003   0.0020   0.0034 lower
+m_ncdm_interacting             0.0448   0.0938   0.0827 upper
+m_ncdm_interacting             0.0016   0.0029   0.0018 lower
+log10G_eff_ncdm_interacting    0.3257   0.3847   0.4071 upper
+log10G_eff_ncdm_interacting    0.0039   0.0190   0.0082 lower
+deg_ncdm_interacting           0.0043   0.1019   0.2533 upper
+deg_ncdm_interacting           0.0162   0.0309   0.1117 lower
+A_planck                       0.0219   0.0835   0.0276 upper
+A_planck                       0.0816   0.0617   0.0923 lower
+M                              0.0392   0.1292   0.2252 upper
+M                              0.0239   0.0449   0.1306 lower
+BBdust                         0.2360   0.2026   0.2405 upper
+BBdust                         0.0083   0.0773   0.0602 lower
+BBsync                         0.0746   0.1036   0.0857 upper
+BBsync                         0.0071   0.0103   0.0070 lower
+BBalphadust                    0.0189   0.0439   0.0329 upper
+BBalphadust                    0.0053   0.0025   0.0055 lower
+BBbetadust                     0.0219   0.0288   0.0534 upper
+BBbetadust                     0.0025   0.0423   0.0973 lower
+BBalphasync                    0.0017   0.0056   0.0067 upper
+BBalphasync                    0.0254   0.0358   0.0372 lower
+BBbetasync                     0.0106   0.0205   0.0740 upper
+BBbetasync                     0.0617   0.1070   0.1006 lower
+BBdustsynccorr                 0.0413   0.1279   0.0832 upper
+BBdustsynccorr                 0.0559   0.0647   0.0718 lower
+H0                             0.0391   0.1310   0.1894 upper
+H0                             0.0296   0.0477   0.1191 lower
+sigma8                         0.0704   0.1045   0.0815 upper
+sigma8                         0.0224   0.0313   0.0691 lower
+Omega_Lambda                   0.0207   0.0616   0.1165 upper
+Omega_Lambda                   0.0004   0.0705   0.1024 lower
+YHe                            0.0006   0.0912   0.2331 upper
+YHe                            0.0175   0.0342   0.1219 lower
+A_s                            0.1975   0.2863   0.2640 upper
+A_s                            0.0400   0.0563   0.1159 lower
+z_reio                         0.2937   0.3724   0.3430 upper
+z_reio                         0.0074   0.0214   0.0148 lower
+
+Raftery&Lewis statistics
+
+chain  markov_thin  indep_thin    nburn
+   0         153         750        8468
+   1         107         780        7828
+   2          97        1580       11495
+   3         116        1268        6432
+   4         125        2497       11025
+   5         152        3526       12099
+
