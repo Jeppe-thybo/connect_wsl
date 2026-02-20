@@ -249,36 +249,20 @@ class Class(real_classy.Class):
                         "'log10G_eff_ncdm_interacting' to choose model."
                     )
 
-                val = float(self.pars['log10G_eff_ncdm_interacting'])
+                val = self.pars['log10G_eff_ncdm_interacting']
 
-                lower_bound = -2.75
-                upper_bound = -2.25
-
-                if val <= lower_bound:
-
-                    self.output_predict = self.models[0](v).numpy()[0]
-                    self._active_model_name = self.model_name[0]
-
-                elif val >= upper_bound:
-
-                    self.output_predict = self.models[1](v).numpy()[0]
+                if val > 2.5:
+                    active_model = self.models[1]
                     self._active_model_name = self.model_name[1]
-
                 else:
-
-                    w = (val - lower_bound) / (upper_bound - lower_bound)
-
-                    out_lower = self.models[0](v).numpy()[0]
-                    out_upper = self.models[1](v).numpy()[0]
-
-                    self.output_predict = (1 - w) * out_lower + w * out_upper
-                    self._active_model_name = f"Blending between ({self.model_name[0]}, {self.model_name[1]}) with log10G_eff_ncdm_interacting={val:.3f}"
-
+                    active_model = self.models[0]
+                    self._active_model_name = self.model_name[0]
 
             else:
                 active_model = self.model
                 self._active_model_name = self.model_name
-                self.output_predict = active_model(v).numpy()[0]
+
+            self.output_predict = active_model(v).numpy()[0]
 
         except:
             raise SystemError('No model has been loaded - Set the attribute model_name to the name of a trained CONNECT model')
