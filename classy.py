@@ -47,6 +47,7 @@ class Class(real_classy.Class):
 
 
     def load_model(self, model_name=None):
+
         if not model_name == None:
             name = model_name
         else:
@@ -54,13 +55,48 @@ class Class(real_classy.Class):
                 raise NameError('No model was specified - Set the attribute model_name to the name of a trained CONNECT model')
             else:
                 name = self.model_name
-        try:
+
+        # Determine if multiple models were passed
+        if isinstance(name, (list, tuple)):
+
+            if len(name) != 2:
+                raise ValueError("When passing multiple connect_model entries, exactly two models must be provided.")
+
+            self.is_multi_model = True
+            self.models = []
+
+            for model_name in name:
+                try:
+                    try:
+                        model = tf.keras.models.load_model(
+                            os.path.join(CONNECT_PATH, 'trained_models', model_name),
+                            compile=False
+                        )
+                    except:
+                        model = tf.keras.models.load_model(model_name, compile=False)
+                except:
+                    raise NameError(f"No trained model by the name of '{model_name}'")
+
+                self.models.append(model)
+
+            # Use first model to read info dictionary (assume both trained consistently)
+            self.model = self.models[0]
+
+        else:
+            self.is_multi_model = False
+
             try:
-                self.model = tf.keras.models.load_model(os.path.join(CONNECT_PATH,'trained_models',name), compile=False)
+                try:
+                    self.model = tf.keras.models.load_model(
+                        os.path.join(CONNECT_PATH, 'trained_models', name),
+                        compile=False
+                    )
+                except:
+                    self.model = tf.keras.models.load_model(name, compile=False)
             except:
-                self.model = tf.keras.models.load_model(name, compile=False)
-        except:
-            raise NameError(f"No trained model by the name of '{name}'")
+                raise NameError(f"No trained model by the name of '{name}'")
+    
+
 
         try:
             self.info = eval(self.model.get_raw_info().numpy().decode('utf-8'))
@@ -122,7 +158,17 @@ class Class(real_classy.Class):
             else:
                 _params.append(0.0)
         _v = tf.constant([_params])
-        _output_predict = self.model(_v).numpy()[0]
+
+
+
+
+        #_output_predict = self.model(_v).numpy()[0]
+        if self.is_multi_model:
+            _ = self.models[0](_v).numpy()[0]
+            _ = self.models[1](_v).numpy()[0]
+        else:
+            _ = self.model(_v).numpy()[0]
+        
         del _params
         del _v
         del _output_predict
@@ -192,10 +238,41 @@ class Class(real_classy.Class):
                     warnings.warn(f'The parameter {par_name} is not listed with a default value, so a value of 0.0 is used instead. You can add a default value to the load_model method in the file: {os.path.join(CONNECT_PATH,__file__)}')
             v = tf.constant([params])
         
-            self.output_predict = self.model(v).numpy()[0]
+            #self.output_predict = self.model(v).numpy()[0]
+
+            # Choose active model
+            if hasattr(self, 'is_multi_model') and self.is_multi_model:
+
+                if 'log10G_eff_ncdm_interacting' not in self.pars:
+                    raise ValueError(
+                        "Multi-model mode requires parameter "
+                        "'log10G_eff_ncdm_interacting' to choose model."
+                    )
+
+                val = self.pars['log10G_eff_ncdm_interacting']
+
+                if val > 2.5:
+                    active_model = self.models[1]
+                    self._active_model_name = self.model_name[1]
+                else:
+                    active_model = self.models[0]
+                    self._active_model_name = self.model_name[0]
+
+            else:
+                active_model = self.model
+                self._active_model_name = self.model_name
+
+            self.output_predict = active_model(v).numpy()[0]
+
         except:
             raise SystemError('No model has been loaded - Set the attribute model_name to the name of a trained CONNECT model')
-        self.cached_splines = {}
+
+    @property
+    def active_model_name(self):
+        if hasattr(self, '_active_model_name'):
+            return self._active_model_name
+        else:
+            return self.model_name
 
 
     def lensed_cl(self, lmax=2500):

@@ -4,10 +4,12 @@
 /resources/
 /jobscripts/*.out
 /data/
+
 /source/shell_scripts/*
 /*.out
 *__pycache__/
 mcmc_plugin/connect.conf
+mcmc_plugin/python/*
 !/input/example.param
 !/jobscripts/example.js
 .DS_Store
