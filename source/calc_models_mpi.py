@@ -197,7 +197,7 @@ else:
                 #if i != len(model)-1:
                     #f.write(str(m)+'\t')
                 #else:
-                   #f.write(str(m)+'\n')
+                    #f.write(str(m)+'\n')
             #f.flush()
 
         # Set required CLASS parameters
