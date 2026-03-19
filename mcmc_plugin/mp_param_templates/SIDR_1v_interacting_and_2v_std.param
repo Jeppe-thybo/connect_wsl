@@ -27,9 +27,6 @@ data.parameters['tau_reio']     = [ 0.057,   0.04, None,  0.013,    1, 'cosmo']
 data.parameters['r']                            = [0.15,    0.0000001,   0.3,  0.14,    1, 'cosmo']
 data.parameters['m_ncdm_interacting']           = [0.1,     0.005,         1,  0.15,    1, 'cosmo']
 data.parameters['log10G_eff_ncdm_interacting']  = [-2,     -5,          -0.1,  0.15,    1, 'cosmo']
-data.parameters['deg_ncdm_interacting']         = [3,       0,             5,  0.2,     1, 'cosmo']
-data.parameters['m_ncdm_standard']              = [0.1,     0.005,         1,  0.15,    1, 'cosmo']
-data.parameters['deg_ncdm_standard']            = [3,       0,             5,  0.2,     1, 'cosmo']
 
 # Nuisance parameter list, same call, except the name does not have to be a class name
 
@@ -73,11 +70,16 @@ data.cosmo_arguments['N_ur'] = 0
 data.cosmo_arguments['N_ncdm_standard'] = 1
 data.cosmo_arguments['output'] = 'mPk'
 data.cosmo_arguments['P_k_max_h/Mpc'] = 1
+data.cosmo_arguments['N_ncdm_standard'] = 1
+data.cosmo_arguments['deg_ncdm_standard'] = 2.046
+data.cosmo_arguments['m_ncdm_standard'] = 0
+data.cosmo_arguments['deg_ncdm_interacting'] = 1
 
 
-data.cosmo_arguments['connect_model'] = 'SIDR_interacting_and_std'
+
+data.cosmo_arguments['connect_model'] = 'SIDR_1v_interacting_and_2v_std'
 #------ Mcmc parameters ----
 
-data.N=2000000
-data.write_step=1000
+data.N=200000
+data.write_step=100
 

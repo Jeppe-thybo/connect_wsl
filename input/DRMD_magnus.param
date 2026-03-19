@@ -24,10 +24,10 @@ class_version = 'classy_magnus'
 
 #########--------- Training parameters ---------#########
 
-train_ratio          = 0.95		  # Amount of data used for training
+train_ratio          = 0.9		  # Amount of data used for training
                                           # (rest is used for testing)
 
-val_ratio            = 0.05	      	  # Amount of training data used for validation
+val_ratio            = 0.1	      	  # Amount of training data used for validation
 
 epochs               = 2000	      	  # Number of cycles/epochs during training
 
@@ -91,6 +91,9 @@ extra_input    = {'k_pivot': 0.05,	    # Extra input to CLASS
 		  'N_ncdm':  1,
 		  'm_ncdm':  0.06,
 		  'T_ncdm':  0.71611,
+          'P_k_max_h/Mpc': 1.0,
+          'start_large_k_at_tau_over_tau_k': 0.00002,
+          'lensing': 'yes'
 		  }
 
 #bestfit_guesses = {'parameter': value}  # Guesses for bestfit for parameters
@@ -129,8 +132,8 @@ sampling_likelihoods = ['Planck_highl_TTTEEE_lite', 'Planck_lowl_EE', 'Planck_lo
 
 #########---------- Saving parameters ----------#########
 
-jobname = 'DRMD_desi_iter_magnus'     # Name job and output folder
+jobname = 'DRMD_magnus'     # Name job and output folder
 
-save_name = 'DRMD_desi_iter_magnus'        # Name of trained models
+save_name = 'DRMD_magnus'        # Name of trained models
 
 overwrite_model = True      # Whether or not to overwrite model names or to append a suffix

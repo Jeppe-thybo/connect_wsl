@@ -1,11 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=SIDR_interacting_and_std
-#SBATCH --partition=q24,q28,q36,q40,q48
-#SBATCH --mem-per-cpu=4g
-#SBATCH --ntasks=200
+#SBATCH --job-name=Magnus_3v_SIDR_DRMD
+#SBATCH --partition=qany
+#SBATCH --mem-per-cpu=3g
+#SBATCH --ntasks=36
+#SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
-#SBATCH --time=48:00:00
-#SBATCH --output=SIDR_interacting_and_std.out
+#SBATCH --time=100:00:00
+#SBATCH --output=Magnus_3v_SIDR_DRMD.out
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jeppethybo@live.dk
 echo "========= Job started at `date` =========="
@@ -21,6 +22,6 @@ path_split=(${clik_line//= / })
 path="$(echo ${path_split[1]} | sed "s/'//g")bin/clik_profile.sh"
 source $path
 
-python connect.py create input/SIDR_interacting_and_std.param
+python connect.py create input/Magnus_3v_SIDR_DRMD.param 
 
 echo "========= Job finished at `date` =========="
