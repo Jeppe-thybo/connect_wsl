@@ -72,12 +72,12 @@ data.cosmo_arguments['modes'] = 's,t'
 data.cosmo_arguments['N_ur'] = 0
 data.cosmo_arguments['N_ncdm_standard'] = 1
 data.cosmo_arguments['output'] = 'mPk'
-data.cosmo_arguments['P_k_max_h/Mpc'] = 1.
+data.cosmo_arguments['P_k_max_h/Mpc'] = 1
 
 
 data.cosmo_arguments['connect_model'] = 'SIDR_interacting_and_std'
 #------ Mcmc parameters ----
 
-data.N=200000
-data.write_step=1
+data.N=2000000
+data.write_step=100
 

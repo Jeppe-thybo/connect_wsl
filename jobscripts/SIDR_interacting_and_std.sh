@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=SIDR_interacting_and_std
-#SBATCH --partition=q24,q28,q36,q40,q48
+#SBATCH --partition=q64
 #SBATCH --mem-per-cpu=4g
 #SBATCH --ntasks=200
 #SBATCH --cpus-per-task=1

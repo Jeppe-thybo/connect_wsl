@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name=DRMD_final
-#SBATCH --partition=q48
+#SBATCH --partition=q64
 #SBATCH --mem-per-cpu=3g
-#SBATCH --ntasks=100
+#SBATCH --ntasks=64
 #SBATCH --cpus-per-task=1
 #SBATCH --time=48:00:00
 #SBATCH --output=DRMD_final.out

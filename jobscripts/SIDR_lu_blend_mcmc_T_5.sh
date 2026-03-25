@@ -1,11 +1,11 @@
 #!/bin/bash
 #SBATCH --job-name=SIDR_lu_blend_mcmc_T_5
-#SBATCH --partition=qany
+#SBATCH --partition=q64
 #SBATCH --mem-per-cpu=3g
 #SBATCH --ntasks=6
 #SBATCH --cpus-per-task=1
 #SBATCH --time=48:00:00
-#SBATCH --output=SIDR_lu_blend_mcmc_T_5.out
+#SBATCH --output=SIDR_lu_blend_mcmc_T_5_test.out
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jeppethybo@live.dk
 echo "========= Job started at `date` =========="
@@ -30,7 +30,8 @@ srun --mpi=none --ntasks=6 --cpus-per-task=1 \
   --conf /home/jthybo/connect_wsl/mcmc_plugin/connect.conf \
   --covmat /home/jthybo/connect_wsl/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat \
   -T 5.0 \
-  -o chains/SIDR_lu_blend_T_5 \
+  --silent \
+  -o chains/SIDR_lu_blend_T_5_test \
   --chain-number $SLURM_PROCID
 
 echo "========= Job finished at `date` =========="

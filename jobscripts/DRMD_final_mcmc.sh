@@ -1,14 +1,14 @@
 #!/bin/bash
-#SBATCH --job-name=SIDR_interacting_and_std
-#SBATCH --partition=q48
+#SBATCH --job-name=DRMD_final_mcmc
+#SBATCH --partition=q64
 #SBATCH --mem-per-cpu=3g
 #SBATCH --ntasks=6
-#SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
 #SBATCH --time=48:00:00
-#SBATCH --output=SIDR_interacting_and_std_mcmc_original_montepython.out
+#SBATCH --output=DRMD_final_mcmc.out
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jeppethybo@live.dk
+
 echo "========= Job started at `date` =========="
 
 cd /home/jthybo/connect_wsl/
@@ -22,16 +22,15 @@ path_split=(${clik_line//= / })
 path="$(echo ${path_split[1]} | sed "s/'//g")bin/clik_profile.sh"
 source $path
 
-
 cd resources/montepython_public/
-
 srun --mpi=none --ntasks=6 --cpus-per-task=1 \
   python montepython/MontePython.py run \
-  -p /home/jthybo/connect_wsl/mcmc_plugin/mp_param_templates/SIDR_interacting_and_std.param \
+  -p /home/jthybo/connect_wsl/mcmc_plugin/mp_param_templates/DRMD_final_planck_lite.param \
   --conf /home/jthybo/connect_wsl/mcmc_plugin/connect.conf \
-  --covmat /home/jthybo/connect_wsl/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat \
-  -o chains/SIDR_interacting_and_std_original_montepython \
+  --covmat /home/jthybo/connect_wsl/resources/montepython_public/covmat/DRMD_base_M.covmat \
   --silent \
+  -o chains/DRMD_final_planck_lite \
   --chain-number $SLURM_PROCID
+
 
 echo "========= Job finished at `date` =========="
