@@ -1,0 +1,27 @@
+omega_b 	 10^{-2}\omega{}_{b } 
+omega_cdm 	 \omega{}_{cdm } 
+h 	 h 
+ln10^{10}A_s 	 ln10^{10}A_{s } 
+n_s 	 n_{s } 
+tau_reio 	 \tau{}_{reio } 
+r 	 r 
+m_ncdm_interacting 	 m_{ncdm interacting } 
+log10G_eff_ncdm_interacting 	 log10G_{eff ncdm interacting } 
+deg_ncdm_interacting 	 deg_{ncdm interacting } 
+m_ncdm_standard 	 m_{ncdm standard } 
+deg_ncdm_standard 	 deg_{ncdm standard } 
+A_planck 	 A_{planck } 
+M 	 M 
+BBdust 	 BBdust 
+BBsync 	 BBsync 
+BBalphadust 	 BBalphadust 
+BBbetadust 	 BBbetadust 
+BBalphasync 	 BBalphasync 
+BBbetasync 	 BBbetasync 
+BBdustsynccorr 	 BBdustsynccorr 
+H0 	 H0 
+sigma8 	 sigma8 
+Omega_Lambda 	 \Omega{}_{Lambda } 
+YHe 	 YHe 
+A_s 	 A_{s } 
+z_reio 	 z_{reio } 

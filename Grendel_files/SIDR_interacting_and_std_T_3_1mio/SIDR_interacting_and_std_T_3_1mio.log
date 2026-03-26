@@ -1,0 +1,9 @@
+2026-03-25_1000000__1.txt	  Number of steps:96260	 Steps accepted:34000	 acc = 0.35	min(-loglike) = 17447.60
+2026-03-25_1000000__6.txt	  Number of steps:117410	 Steps accepted:41000	 acc = 0.35	min(-loglike) = 17411.90
+2026-03-25_1000000__3.txt	  Number of steps:116206	 Steps accepted:41000	 acc = 0.35	min(-loglike) = 17397.50
+2026-03-25_1000000__4.txt	  Number of steps:110414	 Steps accepted:39000	 acc = 0.35	min(-loglike) = 17498.50
+2026-03-25_1000000__5.txt	  Number of steps:113876	 Steps accepted:40000	 acc = 0.35	min(-loglike) = 17659.20
+2026-03-25_1000000__2.txt	  Number of steps:121441	 Steps accepted:43000	 acc = 0.35	min(-loglike) = 17723.60
+--> Total    number    of    steps: 675607
+--> Total number of accepted steps: 238000
+--> Minimum of -logLike           : 17397.50
