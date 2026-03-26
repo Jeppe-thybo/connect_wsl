@@ -1,11 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=SIDR_interacting_and_std
+#SBATCH --job-name=SIDR_create_2
 #SBATCH --partition=q64
 #SBATCH --mem-per-cpu=4g
-#SBATCH --ntasks=200
+#SBATCH --ntasks=32
 #SBATCH --cpus-per-task=1
+#SBATCH --nodes=2
 #SBATCH --time=48:00:00
-#SBATCH --output=SIDR_interacting_and_std.out
+#SBATCH --output=SIDR_interacting_and_int_create_2.out
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jeppethybo@live.dk
 echo "========= Job started at `date` =========="

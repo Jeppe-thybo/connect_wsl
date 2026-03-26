@@ -1,11 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=SIDR_interacting_and_std_T_3_1mio
+#SBATCH --job-name=SIDR_1mio
 #SBATCH --partition=q64
 #SBATCH --mem-per-cpu=3g
 #SBATCH --ntasks=6
 #SBATCH --cpus-per-task=1
-#SBATCH --time=150:00:00
-#SBATCH --output=SIDR_interacting_and_std_T_3_1mio.out
+#SBATCH --nodes=1
+#SBATCH --time=48:00:00
+#SBATCH --output=SIDR_interacting_and_std_mcmc_T_3_1mio.out
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jeppethybo@live.dk
 echo "========= Job started at `date` =========="
@@ -31,7 +32,6 @@ srun --mpi=none --ntasks=6 --cpus-per-task=1  \
   --covmat /home/jthybo/connect_wsl/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat \
   -T 3.0 \
   --silent \
-  -o chains/SIDR_interacting_and_std_T_3_1mio_test \
-  --chain-number $SLURM_PROCID
+  -o chains/SIDR_interacting_and_std_T_3_1mio
 
 echo "========= Job finished at `date` =========="

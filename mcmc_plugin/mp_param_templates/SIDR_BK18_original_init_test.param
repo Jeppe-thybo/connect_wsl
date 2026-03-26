@@ -75,9 +75,9 @@ data.cosmo_arguments['output'] = 'mPk'
 data.cosmo_arguments['P_k_max_h/Mpc'] = 1.
 
 
-data.cosmo_arguments['connect_model'] = 'SIDR_interacting_and_std_magnus'
+data.cosmo_arguments['connect_model'] = 'SIDR_interacting_and_std'
 #------ Mcmc parameters ----
 
-data.N=200000
-data.write_step=100
+data.N=2000
+data.write_step=1
 

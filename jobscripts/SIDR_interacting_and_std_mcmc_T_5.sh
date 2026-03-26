@@ -6,7 +6,7 @@
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
 #SBATCH --time=48:00:00
-#SBATCH --output=SIDR_interacting_and_std_mcmc_T_5_nodes_1.out
+#SBATCH --output=SIDR_interacting_and_std_mcmc_T_5.out
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jeppethybo@live.dk
 echo "========= Job started at `date` =========="
@@ -32,7 +32,6 @@ srun --mpi=none --ntasks=6 --cpus-per-task=1  \
   --covmat /home/jthybo/connect_wsl/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat \
   -T 5.0 \
   --silent \
-  -o chains/SIDR_interacting_and_std_T_5_nodes_1 \
-  --chain-number $SLURM_PROCID
-
+  -o chains/SIDR_interacting_and_std_T_5
+  
 echo "========= Job finished at `date` =========="

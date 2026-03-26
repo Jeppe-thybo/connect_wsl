@@ -79,5 +79,5 @@ data.cosmo_arguments['connect_model'] = 'SIDR_interacting_and_std'
 #------ Mcmc parameters ----
 
 data.N=2000000
-data.write_step=100
+data.write_step=1000
 

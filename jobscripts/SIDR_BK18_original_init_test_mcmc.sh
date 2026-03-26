@@ -1,13 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=SIDR_q64
+#SBATCH --job-name=SIDR_interacting_and_std
 #SBATCH --partition=q64
 #SBATCH --mem-per-cpu=3g
 #SBATCH --ntasks=6
+#SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
-#SBATCH --time=150:00:00
-#SBATCH --output=SIDR_interacting_and_std_T_3_q64_200k_test.out
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=jeppethybo@live.dk
+#SBATCH --time=48:00:00
+#SBATCH --output=SIDR_BK18_original_init_test_mcmc.out
 echo "========= Job started at `date` =========="
 
 cd /home/jthybo/connect_wsl/
@@ -24,14 +23,12 @@ source $path
 
 cd resources/montepython_public/
 
-srun --mpi=none --ntasks=6 --cpus-per-task=1  \
+srun --mpi=none --ntasks=6 --cpus-per-task=1 \
   python montepython/MontePython.py run \
-  -p /home/jthybo/connect_wsl/mcmc_plugin/mp_param_templates/SIDR_interacting_and_std.param \
+  -p /home/jthybo/connect_wsl/mcmc_plugin/mp_param_templates/SIDR_BK18_original_init_test.param \
   --conf /home/jthybo/connect_wsl/mcmc_plugin/connect.conf \
   --covmat /home/jthybo/connect_wsl/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat \
-  -T 3.0 \
+  -o chains/SIDR_BK18_original_init_test \
   --silent \
-  -o chains/SIDR_interacting_and_std_T_3_q64_200k_test \
-  --chain-number $SLURM_PROCID
 
 echo "========= Job finished at `date` =========="

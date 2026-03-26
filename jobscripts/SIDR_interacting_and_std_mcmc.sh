@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=SIDR_interacting_and_std
-#SBATCH --partition=q48
+#SBATCH --partition=q64
 #SBATCH --mem-per-cpu=3g
 #SBATCH --ntasks=6
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
 #SBATCH --time=48:00:00
-#SBATCH --output=SIDR_interacting_and_std_mcmc_original_montepython.out
+#SBATCH --output=SIDR_interacting_and_std_mcmc_2.out
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jeppethybo@live.dk
 echo "========= Job started at `date` =========="
@@ -30,8 +30,7 @@ srun --mpi=none --ntasks=6 --cpus-per-task=1 \
   -p /home/jthybo/connect_wsl/mcmc_plugin/mp_param_templates/SIDR_interacting_and_std.param \
   --conf /home/jthybo/connect_wsl/mcmc_plugin/connect.conf \
   --covmat /home/jthybo/connect_wsl/resources/montepython_public/covmat/base2018TTTEEE_lite.covmat \
-  -o chains/SIDR_interacting_and_std_original_montepython \
+  -o chains/SIDR_interacting_and_std_2 \
   --silent \
-  --chain-number $SLURM_PROCID
 
 echo "========= Job finished at `date` =========="

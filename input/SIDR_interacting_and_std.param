@@ -131,8 +131,8 @@ sampling_likelihoods = ['Planck_highl_TTTEEE_lite', 'Planck_lowl_TT', 'Planck_lo
 
 #########---------- Saving parameters ----------#########
 
-jobname = 'SIDR_interacting_and_std'     # Name job and output folder
+jobname = 'SIDR_interacting_and_std_2'     # Name job and output folder
 
-save_name = 'SIDR_interacting_and_std'        # Name of trained models
+save_name = 'SIDR_interacting_and_std_2'        # Name of trained models
 
 overwrite_model = True      # Whether or not to overwrite model names or to append a suffix
