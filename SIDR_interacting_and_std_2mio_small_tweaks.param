@@ -1,0 +1,83 @@
+#------Experiments to test (separated with commas)-----
+data.experiments=['Planck_highl_TTTEEE_lite','Planck_lowl_EE','Planck_lowl_TT','BK18lf_dust','bao_fs_boss_dr12','bao_smallz_2014','Planck_lensing','Pantheon']
+
+data.over_sampling=[1,1,1,1]
+
+#------ Parameter list -------
+
+# data.parameters[class name] = [mean, min, max, 1-sigma, scale, role]
+# - if min max irrelevant, put to None
+# - if fixed, put 1-sigma to 0
+# - if scale irrelevant, put to 1, otherwise to the appropriate factor
+# - role is either 'cosmo', 'nuisance' or 'derived'. You should put the derived
+# parameters at the end, and in case you are using the `-j fast` Cholesky
+# decomposition, you should order your nuisance parameters from slowest to
+# fastest.
+
+# Cosmological parameters list
+
+data.parameters['omega_b']      = [ 2.28,    None, None,  0.015, 0.01, 'cosmo']
+data.parameters['omega_cdm']    = [ 0.133,   None, None, 0.002,    1, 'cosmo']
+data.parameters['h']            = [ 0.70,    None, None,   .005,    1, 'cosmo']
+data.parameters['ln10^{10}A_s'] = [ 3.077,   None, None, 0.003,    1, 'cosmo']
+data.parameters['n_s']          = [ 0.99,    None, None, 0.004,    1, 'cosmo']
+data.parameters['tau_reio']     = [ 0.057,   0.04, None,  0.007,    1, 'cosmo']
+
+#SIDR parameters
+data.parameters['r']                            = [0.15,    0.0000001,   0.3,  0.02,    1, 'cosmo']
+data.parameters['m_ncdm_interacting']           = [0.1,     0.005,         1,  0.05,    1, 'cosmo']
+data.parameters['log10G_eff_ncdm_interacting']  = [-2,     -5,          -0.1,  0.1,    1, 'cosmo']
+data.parameters['deg_ncdm_interacting']         = [3,       0,             5,  0.1,     1, 'cosmo']
+data.parameters['m_ncdm_standard']              = [0.1,     0.005,         1,  0.05,    1, 'cosmo']
+data.parameters['deg_ncdm_standard']            = [3,       0,             5,  0.1,     1, 'cosmo']
+
+# Nuisance parameter list, same call, except the name does not have to be a class name
+
+data.parameters['M']	           = [-19.2, -30, -10, 0.5,  1, 'nuisance']
+
+data.parameters['BBdust']          = [3.0, 0.0, 15.0, 0.1, 1.0, 'nuisance']
+data.parameters['BBsync']          = [1.0, 0.0, 50.0, 1.0, 1.0, 'nuisance']
+data.parameters['BBalphadust']     = [-0.42,-1.0, 0.0, 0.01, 1.0, 'nuisance']
+data.parameters['BBbetadust']      = [1.59, 0.8, 2.40, 0.02, 1.0, 'nuisance']       
+data.parameters['BBalphasync']     = [-0.6, -1.0, 0.0, 0.01, 1.0, 'nuisance']
+data.parameters['BBbetasync']      = [-3.1, -4.5, -2.0, 0.02, 1.0, 'nuisance']     
+data.parameters['BBdustsynccorr']  = [0.2, -1.0, 1.0, 0.01, 1, 'nuisance']
+data.parameters['BBTdust']         = [19.6, 19.6, 19.6, 0.0, 1.0, 'nuisance']
+data.parameters['Delta_dust']      = [1.0, 1.0, 1.0, 0.0, 1.0, 'nuisance']
+data.parameters['Delta_sync']      = [1.0, 1.0, 1.0, 0.0, 1.0, 'nuisance']
+data.parameters['gamma_corr']      = [0.0, 0.0, 0.0, 0.0, 1.0, 'nuisance']
+data.parameters['gamma_95']        = [0.0, 0.0, 0.0, 0.0, 1.0, 'nuisance']
+data.parameters['gamma_150']       = [0.0, 0.0, 0.0, 0.0, 1.0, 'nuisance']
+data.parameters['gamma_220']       = [0.0, 0.0, 0.0, 0.0, 1.0, 'nuisance']
+data.parameters['EEtoBB_dust']     = [2.0, 2.0, 2.0, 0.0, 1.0, 'nuisance']
+data.parameters['EEtoBB_sync']     = [2.0, 2.0, 2.0, 0.0, 1.0, 'nuisance']
+
+data.parameters['A_planck']          = [ 1.00061,   0.9,   1.1,     0.0025,     1, 'nuisance']
+
+
+# Standard derived parameters
+data.parameters['H0']              = [0, None, None, 0,     1,   'derived']
+data.parameters['sigma8']          = [0, None, None, 0,     1,   'derived']
+data.parameters['Omega_Lambda']    = [0, None, None, 0,     1,   'derived']
+data.parameters['YHe']             = [0, None, None, 0,     1,   'derived']
+data.parameters['A_s']             = [0, None, None, 0,     1,   'derived']
+data.parameters['z_reio']          = [0, None, None, 0,     1,   'derived']
+
+# Other cosmo parameters (fixed parameters, precision parameters, etc.)
+
+data.cosmo_arguments['k_pivot'] = 0.05
+data.cosmo_arguments['N_ncdm_interacting'] = 1
+data.cosmo_arguments['ncdm_fluid_approximation'] = 3
+data.cosmo_arguments['modes'] = 's,t'
+data.cosmo_arguments['N_ur'] = 0
+data.cosmo_arguments['N_ncdm_standard'] = 1
+data.cosmo_arguments['output'] = 'mPk'
+data.cosmo_arguments['P_k_max_h/Mpc'] = 1.
+
+
+data.cosmo_arguments['connect_model'] = 'SIDR_interacting_and_std'
+#------ Mcmc parameters ----
+
+data.N=2000000
+data.write_step=1000
+

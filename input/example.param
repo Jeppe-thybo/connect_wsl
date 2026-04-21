@@ -16,7 +16,7 @@ parameters={'omega_b'        :  [ 0.014,          0.039          ],
 # Specify additional parameters
 
 
-
+class_version = "classy"
 
 #########--------- Training parameters ---------#########
 
@@ -95,7 +95,7 @@ prior_ranges     = parameters            # Prior ranges for mcmc sampling. A dic
                                          # with a logarithmic prior
 
 
-sampling      = 'iterative'    # Sampling of training data can be done with the
+sampling      = 'hypersphere'    # Sampling of training data can be done with the
                                # methods 'lhc' and 'iterative'. Some parameters
                                # are only usable wth the iterative method
 
